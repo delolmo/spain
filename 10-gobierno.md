@@ -1,0 +1,72 @@
+# Estructura de Gobierno
+
+## Reducción de Ministerios
+
+- **Ministerio de Administración Pública**
+  - DG de Función Pública
+  - DG de Administración Digital (Cartera de Identidad, sistema de enrutamiento, anonimato digital)
+  - DG de Coordinación Territorial (relación con CCAA y municipios)
+  - DG de Contratación Pública (plataforma única)
+  - Organismos: Agencia Española de Protección de Datos (AEPD), INAP (Instituto Nacional de Administración Pública), Centro de Servicios Digitales del Estado (desarrollo, mantenimiento y supervisión de sistemas digitales de la Administración), BOE (Boletín Oficial del Estado), FNMT (Fábrica Nacional de Moneda y Timbre)
+- **Ministerio de Asuntos Exteriores**
+  - DG de Política Exterior
+  - DG de Asuntos Consulares
+  - DG de Comercio Exterior e Internacionalización
+  - Organismos: Instituto Cervantes, ICEX (España Exportación e Inversiones)
+- **Ministerio de Defensa**
+  - DG de Política de Defensa
+  - DG de Personal Militar
+  - DG de Armamento y Material
+  - Organismos: Centro Nacional de Inteligencia (CNI), Centro Nacional de Ciberseguridad, Centro de Investigación Aeroespacial y de Defensa (CIAD)
+- **Ministerio de Economía**
+  - DG de Política Económica
+  - DG de Competencia y Mercados
+  - DG de Industria
+  - DG de Comercio Interior y Consumo
+  - DG de Agricultura, Ganadería y Pesca
+  - DG de Trabajo y Empleo
+  - DG de Turismo
+  - DG de Seguridad Social y Pensiones
+  - Organismos: CNMC (Comisión Nacional de los Mercados y la Competencia), CNMV (Comisión Nacional del Mercado de Valores), Banco de España, INE (Instituto Nacional de Estadística), CDTI (Centro para el Desarrollo Tecnológico y la Innovación)
+- **Ministerio de Educación, Cultura y Deporte**
+  - DG de Educación Primaria y Secundaria
+  - DG de Formación Profesional
+  - DG de Universidades
+  - DG de Becas y Ayudas al Estudio
+  - Organismos: CSIC (Consejo Superior de Investigaciones Científicas), ANECA (Agencia Nacional de Evaluación de la Calidad y Acreditación), Consejo Superior de Deportes (CSD), Biblioteca Nacional de España, Museo Nacional del Prado, Museo Nacional Centro de Arte Reina Sofía
+- **Ministerio de Hacienda**
+  - Agencia Tributaria (AEAT)
+  - DG de Presupuestos
+  - DG del Tesoro y Deuda Pública
+  - DG de Patrimonio del Estado
+  - DG de Financiación Territorial (transferencias a CCAA y municipios)
+  - Organismos: AIReF (Autoridad Independiente de Responsabilidad Fiscal), ICO (Instituto de Crédito Oficial — canalización de fondos y programas de la UE), SEPI (Sociedad Estatal de Participaciones Industriales), SELAE (Loterías y Apuestas del Estado), Patrimonio Nacional
+- **Ministerio de Infraestructuras**
+  - DG de Carreteras
+  - DG de Ferrocarriles
+  - DG de Puertos y Aeropuertos
+  - DG de Vivienda y Urbanismo
+  - DG de Energía
+  - DG de Telecomunicaciones
+  - DG de Agua
+  - Organismos: Agencia Estatal del Agua, Confederaciones Hidrográficas, AESA (Agencia Estatal de Seguridad Aérea), AEMET (Agencia Estatal de Meteorología), CSN (Consejo de Seguridad Nuclear), CEDEX (Centro de Estudios y Experimentación de Obras Públicas), ADIF, RENFE, AENA, Puertos del Estado, Autoridades Portuarias, ENAIRE, IGN (Instituto Geográfico Nacional), IGME (Instituto Geológico y Minero de España)
+- **Ministerio de Interior**
+  - DG de la Policía Nacional
+  - DG de la Guardia Civil
+  - DG de Instituciones Penitenciarias
+  - DG de Protección Civil y Emergencias (112)
+  - DG de Tráfico (DGT)
+  - DG de Inmigración y Extranjería
+  - Organismos: Agencia Nacional de Recuperación de Activos, CITCO (Centro de Inteligencia contra el Terrorismo y el Crimen Organizado)
+- **Ministerio de Justicia**
+  - DG de Registros (Civil, Mercantil, Propiedad, Propiedad Intelectual e Industrial, Animales, Residentes Digitales, Títulos y Certificados)
+  - DG de Administración de Justicia
+  - DG de Codificación y Reforma Legislativa
+  - Organismos: INTCF (Instituto Nacional de Toxicología y Ciencias Forenses), TEA (Tribunal Económico-Administrativo Central), TACRC (Tribunal Administrativo Central de Recursos Contractuales)
+  - Base de datos penal
+- **Ministerio de Sanidad**
+  - DG de Salud Pública
+  - DG de Asistencia Sanitaria
+  - DG de Farmacia
+  - DG de Dependencia y Discapacidad
+  - Organismos: Agencia Española de Medicamentos y Productos Sanitarios (AEMPS), AESAN (Agencia Española de Seguridad Alimentaria y Nutrición), ONT (Organización Nacional de Trasplantes), Centro de Control de Enfermedades (CCE, integra el Instituto de Salud Carlos III)
