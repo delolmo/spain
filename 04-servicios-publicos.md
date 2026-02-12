@@ -59,6 +59,18 @@
 - Eliminar becas Erasmus nacionales (mantener solo las europeas)
 - Guarderías públicas universales 0-3 años
 
+## Protección de Menores
+
+- **Creación de un Servicio Nacional de Protección de Menores.** Supresión de los 17 sistemas autonómicos de tutela y acogida. Competencia, gestión, personal y centros pasan al Estado.
+- Prioridad legal del acogimiento familiar sobre el institucional. El internamiento en centro solo procede cuando el acogimiento no es posible o el interés del menor lo desaconseja.
+- Agilización de la adopción nacional: plazo máximo de 12 meses desde la solicitud hasta la resolución. Prioridad de la adopción nacional sobre la internacional cuando existan menores tutelados sin familia.
+- Controles post-adopción obligatorios durante los tres primeros años, con visitas periódicas de seguimiento.
+- Supervisión independiente de todos los centros de protección de menores, con inspecciones periódicas sin previo aviso.
+- Programa de transición a la vida adulta para tutelados que cumplen 18 años: acompañamiento en vivienda, empleo y formación durante 3 años.
+- **Condicionalidad de las exenciones fiscales por hijo.** Las exenciones fiscales por hijo quedan condicionadas al cumplimiento de las obligaciones parentales básicas: escolarización obligatoria, calendario de vacunación y revisiones pediátricas del SNS. El incumplimiento reiterado suspende el beneficio fiscal y activa el protocolo de investigación del Servicio Nacional de Protección de Menores.
+- Protocolo obligatorio de detección de desatención para servicios sanitarios y educativos: los profesionales del SNS y los docentes están obligados a comunicar indicios de negligencia o maltrato al Servicio Nacional de Protección de Menores.
+- Procedimiento acelerado de retirada de patria potestad en casos de negligencia grave.
+
 ## Pensiones
 
 - Eliminación de jubilaciones anticipadas.
