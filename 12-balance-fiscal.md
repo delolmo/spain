@@ -48,7 +48,7 @@ Recaudación adicional generada por ampliación de bases imponibles, supresión 
 - Reducción del fraude por simplificación fiscal (1-2% de la base tributaria): +2.500. Un sistema con tres impuestos, sin regímenes especiales ni deducciones, reduce drásticamente las oportunidades de planificación fiscal agresiva y fraude.
 - Suelo régimen foral eliminado (recaudación neta País Vasco + Navarra): +1.350. País Vasco y Navarra dejan de recaudar ~25.000 M€/año en impuestos propios y pasan a tributar al Estado, que asume también sus competencias de gasto. Saldo neto estimado tras homogeneizar recaudación y gasto per cápita.
 
-## 3. Ahorro en gasto público: +57.690 M€
+## 3. Ahorro en gasto público: +57.190 M€
 
 Gasto público que desaparece por supresión de estructuras, organismos, prestaciones y duplicidades:
 
@@ -123,14 +123,14 @@ Estos ingresos se destinan íntegramente a la amortización de deuda pública (L
 |---|---|
 | Ingresos que se pierden | −50.510 |
 | Ingresos nuevos o recuperados | +20.250 |
-| Ahorro en gasto público | +57.690 |
+| Ahorro en gasto público | +57.190 |
 | Nuevo gasto del programa | −18.430 |
-| **Balance recurrente estático** | **+9.000** |
+| **Balance recurrente estático** | **+8.500** |
 | Buffer privatizaciones (one-off) | +15.000 |
 
-El balance estático presenta un superávit de +9.000 M€/año (~0,6% del PIB). Sobre el déficit actual del 2,8% del PIB, el déficit total se reduciría a ~2,2% del PIB.
+El balance estático presenta un superávit de +8.500 M€/año (~0,6% del PIB). Sobre el déficit actual del 2,8% del PIB, el déficit total se reduciría a ~2,2% del PIB.
 
-Sin la partida de defensa (11.000 M€), el balance estático arrojaría un superávit de +20.000 M€/año (~1,4% del PIB), reduciendo el déficit total al ~1,4% del PIB.
+Sin la partida de defensa (11.000 M€), el balance estático arrojaría un superávit de +19.500 M€/año (~1,3% del PIB), reduciendo el déficit total al ~1,5% del PIB.
 
 ## 7. Escenario dinámico (estimación a año 5)
 
@@ -147,13 +147,13 @@ Efectos dinámicos estimados a año 5 (M€/año):
 
 |  | M€/año |
 |---|---|
-| Balance recurrente estático | +9.000 |
+| Balance recurrente estático | +8.500 |
 | Efectos dinámicos (estimación central a año 5) | +4.000 a +8.000 |
-| **Balance dinámico estimado** | **+13.000 a +17.000** |
+| **Balance dinámico estimado** | **+12.500 a +16.500** |
 
-Con efectos dinámicos, el programa genera un superávit de +13.000 / +17.000 M€/año (~0,9%-1,2% del PIB). Sobre el déficit actual del 2,8%, el déficit total se reduciría a ~1,6%-1,9% del PIB.
+Con efectos dinámicos, el programa genera un superávit de +12.500 / +16.500 M€/año (~0,9%-1,1% del PIB). Sobre el déficit actual del 2,8%, el déficit total se reduciría a ~1,7%-1,9% del PIB.
 
-Sin la partida de defensa (11.000 M€), el programa en escenario dinámico generaría un resultado de +24.000 a +28.000 M€/año (~1,6%-1,9% del PIB), reduciendo el déficit total al ~0,9%-1,2% del PIB.
+Sin la partida de defensa (11.000 M€), el programa en escenario dinámico generaría un resultado de +23.500 a +27.500 M€/año (~1,6%-1,9% del PIB), reduciendo el déficit total al ~0,9%-1,2% del PIB.
 
 El buffer de privatizaciones (15.000 M€) cubre el gap de los primeros años hasta que los efectos dinámicos maduran.
 
