@@ -3,7 +3,7 @@
 ## Fase 1: Primeros 6 meses — Mayoría simple (leyes ordinarias)
 
 - Reforma IRPF completa: tramos 25%/55%, base única, obligación universal de declarar (sin umbral mínimo), crédito IS sobre dividendos, exenciones por hijos y discapacidad, tributación individual, no residentes, tributación íntegra de indemnizaciones por despido, eliminación de deducción de gastos para personas físicas con actividad económica (Ley 35/2006 del IRPF)
-- IS estonio (0% beneficios retenidos, 25% al distribuir), sin mínimo exento ni tipo reducido para pymes, regla única de deducibilidad (cuatro condiciones, 100% o nada), tributación pass-through opcional para pequeñas empresas (Ley 27/2014 del IS)
+- IS al 25% sin excepciones, sin mínimo exento ni tipo reducido para pymes, regla única de deducibilidad (cuatro condiciones, 100% o nada), tributación pass-through opcional para pequeñas empresas (Ley 27/2014 del IS)
 - IVA al 21% unificado, criterio de caja (Ley 37/1992 del IVA)
 - Eliminación de impuestos menores: TP, Sucesiones, Plusvalía, IAE, Patrimonio, IVTM, IEDMT, ICIO, Primas, Loterías, Tasa Google, Tasa Tobin, AJD (leyes específicas de cada tributo + RD Leg. 2/2004 de Haciendas Locales)
 - Eliminación de impuestos especiales salvo hidrocarburos y tabaco (Ley 38/1992 de Impuestos Especiales)
@@ -27,7 +27,6 @@
 - Reforma de la LOPDGDD: protección de datos proporcional al tamaño y riesgo, exención de pequeñas y medianas empresas en riesgo bajo (LO 3/2018)
 - Funcionarios: trienios, productividad, jornada 40h, eventuales, interinos (RD Leg. 5/2015 EBEP)
 - Reforma del EBEP: nueva causa de pérdida de condición de funcionario por supresión de cuerpo, escala o función por ley, con recolocación previa de 6 meses e indemnización de 20 días/año (reforma RD Leg. 5/2015 EBEP, rango orgánico)
-- Supresión de MUFACE, MUGEJU e ISFAS: integración de todos los beneficiarios en el SNS (reforma LGSS + leyes reguladoras de cada mutualidad)
 - Reforma de pensiones completa (LGSS)
 - Derogación de la Ley de Vivienda (Ley 12/2023)
 - Desahucio exprés, duración libre de contratos, inscripción obligatoria (LEC Ley 1/2000 + LAU Ley 29/1994)
@@ -73,8 +72,9 @@
 
 ## Fase 2: Meses 6-18 — Mayoría absoluta (176 votos — leyes orgánicas)
 
-- Recentralización educativa: nueva Ley Orgánica de Educación (deroga LOMLOE, LO 3/2020). Incluye: castellano como única lengua vehicular, reválida nacional de ESO, PAU única nacional, MIR educativo (oposición nacional + residencia de 2 años), evaluación periódica del profesorado, prohibición de promoción con suspensas, certificación B2 obligatoria para ESO, fusión de universidades y sistema de préstamo-renta contingente universitario (100% coste real, tipo 0%, umbral 25.000 €, cuota mínima 100 €/mes, cancelación a 20 años)
+- Recentralización educativa: nueva Ley Orgánica de Educación (deroga LOMLOE, LO 3/2020). Incluye: castellano como única lengua vehicular, reválida nacional de ESO, PAU única nacional, MIR educativo (oposición nacional + residencia de 2 años), evaluación periódica del profesorado, prohibición de promoción con suspensas, certificación B2 obligatoria para ESO, fusión de universidades y préstamo universitario avalado por el Estado (100% coste real, tipo 0%, repago íntegro en 20 años)
 - Recentralización sanitaria: creación del Centro de Control de Enfermedades (CCE), ley de armonización (Art. 150.3 CE) + reforma Ley 16/2003 de Cohesión del SNS
+- Supresión de MUFACE, MUGEJU e ISFAS: integración de todos los beneficiarios en el SNS ya recentralizado (reforma LGSS + leyes reguladoras de cada mutualidad)
 - Supresión de policías autonómicas: reforma de Estatutos de Autonomía del País Vasco, Cataluña, Navarra y Canarias (LO)
 - Oposición nacional única para todos los cuerpos (EBEP con rango orgánico + LO de educación + LO sanitaria)
 - Derogación de la Ley de Violencia de Género + nueva LO de violencia doméstica (derogación LO 1/2004)

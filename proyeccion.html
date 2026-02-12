@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyección fiscal a 25 años</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root {
+    --bg: #070b14; --card: #0d1320; --border: #1a2236;
+    --text: #d8dfe9; --muted: #7b8ba5; --dim: #4a5873;
+    --blue: #3b82f6; --green: #22c55e; --red: #ef4444;
+    --amber: #f59e0b; --cyan: #06b6d4; --purple: #a78bfa; --rose: #f43f5e;
+  }
+  body { font-family: 'IBM Plex Mono', monospace; background: var(--bg); color: var(--text); padding: 32px 24px; min-height: 100vh; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  h1 { font-size: 13px; font-weight: 600; letter-spacing: 0.15em; text-transform: uppercase; color: var(--blue); margin-bottom: 6px; }
+  .subtitle { font-size: 11px; color: var(--dim); margin-bottom: 28px; line-height: 1.6; }
+
+  .params-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .param { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 12px 14px; }
+  .param label { display: block; font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dim); margin-bottom: 6px; }
+  .param input, .param select { width: 100%; background: transparent; border: none; outline: none; color: var(--text); font-family: inherit; font-size: 18px; font-weight: 700; padding: 0; }
+  .param select { font-size: 12px; font-weight: 600; cursor: pointer; }
+  .param select option { background: var(--card); color: var(--text); }
+  .param .unit { font-size: 11px; color: var(--dim); font-weight: 400; }
+  .param-row { display: flex; align-items: baseline; gap: 4px; }
+
+  .kpi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .kpi { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 14px 16px; }
+  .kpi-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dim); margin-bottom: 4px; }
+  .kpi-value { font-size: 22px; font-weight: 700; }
+  .kpi-sub { font-size: 10px; color: var(--dim); margin-top: 2px; }
+  .green { color: var(--green); } .red { color: var(--red); } .blue { color: var(--blue); } .cyan { color: var(--cyan); }
+
+  .chart-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin-bottom: 20px; }
+  .chart-title { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dim); margin-bottom: 16px; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 16px; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 10px; color: var(--muted); }
+  .legend-dot { width: 10px; height: 3px; border-radius: 1px; }
+  canvas { max-height: 400px; }
+
+  .table-wrap { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 24px; margin-bottom: 20px; overflow-x: auto; }
+  .table-title { font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--dim); margin-bottom: 16px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 10px; white-space: nowrap; }
+  th { text-align: right; padding: 6px 8px; border-bottom: 2px solid var(--border); color: var(--dim); font-weight: 600; font-size: 9px; text-transform: uppercase; letter-spacing: 0.04em; }
+  th:first-child { text-align: center; }
+  td { text-align: right; padding: 5px 8px; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+  td:first-child { text-align: center; font-weight: 600; }
+  tr:last-child td { border-bottom: none; }
+  .pos { color: var(--green); } .neg { color: var(--red); }
+
+  .notes { background: var(--card); border: 1px solid var(--border); border-radius: 6px; padding: 14px 18px; font-size: 10px; color: var(--dim); line-height: 1.7; margin-top: 20px; }
+  .notes strong { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Proyección fiscal a 25 años</h1>
+  <p class="subtitle">Modelo unificado · Estructura fiscal + convergencia pensiones + dinámicos fiscales + repago universitario + ahorro en intereses</p>
+
+  <div class="params-grid">
+    <div class="param">
+      <label>PIB inicial</label>
+      <div class="param-row"><input type="number" id="pib0" value="1470000" step="10000"><span class="unit">M€</span></div>
+    </div>
+    <div class="param">
+      <label>Deuda inicial</label>
+      <div class="param-row"><input type="number" id="deuda0" value="1595000" step="10000"><span class="unit">M€</span></div>
+    </div>
+    <div class="param">
+      <label>Crecimiento nominal PIB</label>
+      <div class="param-row"><input type="number" id="growthPib" value="2.0" step="0.1" min="0" max="10"><span class="unit">%</span></div>
+    </div>
+    <div class="param">
+      <label>IPC medio</label>
+      <div class="param-row"><input type="number" id="ipc" value="2.5" step="0.1" min="0" max="8"><span class="unit">%</span></div>
+    </div>
+    <div class="param">
+      <label>Tipo medio deuda</label>
+      <div class="param-row"><input type="number" id="tipoDeuda" value="2.5" step="0.1" min="0" max="8"><span class="unit">%</span></div>
+    </div>
+    <div class="param">
+      <label>Déficit actual (sin programa)</label>
+      <div class="param-row"><input type="number" id="deficitBase" value="2.8" step="0.1" min="0" max="10"><span class="unit">% PIB</span></div>
+    </div>
+    <div class="param">
+      <label>Privatizaciones</label>
+      <div class="param-row"><input type="number" id="privatiz" value="15000" step="1000"><span class="unit">M€</span></div>
+    </div>
+    <div class="param">
+      <label>Repago universitario (régimen)</label>
+      <div class="param-row"><input type="number" id="uniRepago" value="3500" step="100"><span class="unit">M€/año</span></div>
+    </div>
+    <div class="param">
+      <label>Pensiones > SMI (gasto anual)</label>
+      <div class="param-row"><input type="number" id="pensionBase" value="140000" step="5000"><span class="unit">M€</span></div>
+    </div>
+    <div class="param">
+      <label>Efecto rotación (% del IPC)</label>
+      <div class="param-row"><input type="number" id="rotacion" value="35" step="5" min="0" max="100"><span class="unit">%</span></div>
+    </div>
+    <div class="param">
+      <label>Escenario</label>
+      <select id="escenario">
+        <option value="pesimista">Pesimista (din. +4.000)</option>
+        <option value="central" selected>Central (din. +6.000)</option>
+        <option value="optimista">Optimista (din. +8.000)</option>
+        <option value="sinDefensa">Central sin defensa</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="kpi-grid" id="kpis"></div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Deuda / PIB (%)</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div>Status quo</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div>Con programa</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--dim)"></div>60% / 80% Maastricht</div>
+    </div>
+    <canvas id="chartRatio"></canvas>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Descomposición de la mejora anual (M€/año)</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Estático</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--rose)"></div>Pensiones</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div>Dinámicos</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--purple)"></div>Universidad</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--cyan)"></div>Intereses</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--green)"></div>Total</div>
+    </div>
+    <canvas id="chartMejora"></canvas>
+  </div>
+
+  <div class="chart-wrap">
+    <div class="chart-title">Deuda absoluta (M€) e intereses anuales</div>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--red)"></div>Deuda SQ</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--blue)"></div>Deuda programa</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--amber)"></div>Intereses SQ</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--cyan)"></div>Intereses programa</div>
+    </div>
+    <canvas id="chartAbs"></canvas>
+  </div>
+
+  <div class="table-wrap">
+    <div class="table-title">Detalle año a año (M€)</div>
+    <table id="tbl"></table>
+  </div>
+
+  <div class="notes" id="notes"></div>
+</div>
+
+<script>
+// ============================================================
+// CONSTANTS (from 12-balance-fiscal.md)
+// ============================================================
+const YEARS = 25;
+
+const REV_LOST    = 49560;   // steady-state revenue lost
+const REV_GAINED  = 20250;   // steady-state revenue gained
+const SPEND_SAVED = 42690;   // steady-state non-pension spending saved (57.690 − 15.000)
+const NEW_SPEND   = 18430;   // steady-state new spending (includes 11.000 defense)
+const DEFENSE     = 11000;   // defense within NEW_SPEND
+
+// Phase-in multipliers [year1 … year6+]
+const pRevLost   = [0.82, 0.96, 1, 1, 1, 1];
+const pRevGained = [0.70, 0.85, 0.94, 1, 1, 1];
+const pSpendSav  = [0.42, 0.58, 0.73, 0.87, 0.95, 1];
+const pNewSpend  = [0.50, 0.70, 0.85, 0.95, 1, 1];
+
+// Dynamic effects phase-in [year1…year5]
+const dynPhase = [0.10, 0.27, 0.53, 0.80, 1.00];
+
+// Privatization schedule (fraction of total per year, sums to 1)
+const privatPct = [0.07, 0.20, 0.33, 0.27, 0.13];
+
+// ============================================================
+// HELPERS
+// ============================================================
+function ph(arr, y) { return arr[Math.min(y, arr.length - 1)]; }
+function $(id) { return document.getElementById(id); }
+function fmt(n) { return Math.round(n).toLocaleString('es-ES'); }
+function fmtSign(n) { return (n >= 0 ? '+' : '') + fmt(n); }
+function fmtPct(n) { return n.toFixed(1).replace('.', ',') + '%'; }
+
+// ============================================================
+// MODEL
+// ============================================================
+function getParams() {
+  return {
+    pib0:        +$('pib0').value,
+    deuda0:      +$('deuda0').value,
+    growthPib:   +$('growthPib').value / 100,
+    ipc:         +$('ipc').value / 100,
+    tipoDeuda:   +$('tipoDeuda').value / 100,
+    deficitBase: +$('deficitBase').value / 100,
+    privatiz:    +$('privatiz').value,
+    uniRepago:   +$('uniRepago').value,
+    pensionBase: +$('pensionBase').value,
+    rotacion:    +$('rotacion').value / 100,
+    escenario:   $('escenario').value,
+  };
+}
+
+function compute() {
+  const p = getParams();
+  const dynMax = { pesimista: 4000, central: 6000, optimista: 8000, sinDefensa: 6000 }[p.escenario];
+  const sinDef = p.escenario === 'sinDefensa';
+  const newSpendAdj = sinDef ? NEW_SPEND - DEFENSE : NEW_SPEND;
+
+  let deudaSQ = p.deuda0;
+  let deudaProg = p.deuda0;
+  const rows = [];
+
+  for (let y = 0; y < YEARS; y++) {
+    const yr = y + 1;
+    const pib = p.pib0 * Math.pow(1 + p.growthPib, yr);
+
+    // 1. Structural fiscal impact (phase-in)
+    const rLost  = REV_LOST   * ph(pRevLost, y);
+    const rGain  = REV_GAINED * ph(pRevGained, y);
+    const sSaved = SPEND_SAVED * ph(pSpendSav, y);
+    const nSpend = newSpendAdj * ph(pNewSpend, y);
+    const estatico = rGain - rLost + sSaved - nSpend;
+
+    // 2. Pension convergence
+    // savings = base × ((1+ipc)^t − (1+ipc×rotacion)^t)
+    // Without freeze: spending grows at full IPC
+    // With freeze: spending grows at ipc×rotacion (new entrants with higher base)
+    const pensionSav = p.pensionBase * (
+      Math.pow(1 + p.ipc, yr) - Math.pow(1 + p.ipc * p.rotacion, yr)
+    );
+
+    // 3. Dynamic fiscal effects (phase-in 5 years, slow growth after, cap ×1.42)
+    let dinamicos;
+    if (y < 5) {
+      dinamicos = dynMax * dynPhase[y];
+    } else {
+      dinamicos = Math.min(dynMax * (1 + (y - 4) * 0.05), dynMax * 1.42);
+    }
+
+    // 4. University repayment (phase-in years 4-12)
+    let repagoUni = 0;
+    if (yr > 3 && yr < 12) repagoUni = p.uniRepago * (yr - 3) / 9;
+    else if (yr >= 12) repagoUni = p.uniRepago;
+
+    // 5. Interest savings (beginning-of-year debt difference)
+    const intSQ   = deudaSQ * p.tipoDeuda;
+    const intProg = deudaProg * p.tipoDeuda;
+    const ahorroInt = Math.max(0, intSQ - intProg);
+
+    // 6. Privatizations
+    const privat = y < privatPct.length ? p.privatiz * privatPct[y] : 0;
+
+    // --- Totals ---
+    const programBal = estatico + pensionSav + dinamicos + repagoUni + ahorroInt;
+    const deficitSQ = pib * p.deficitBase;
+    const balance = programBal + privat - deficitSQ; // positive = surplus
+
+    // Update debts
+    deudaSQ   += deficitSQ;
+    deudaProg -= balance; // debt decreases by surplus amount
+
+    rows.push({
+      year: yr, pib,
+      estatico, pensionSav, dinamicos, repagoUni, ahorroInt, privat,
+      programBal, deficitSQ, balance,
+      deudaSQ, deudaProg,
+      ratioProg: deudaProg / pib * 100,
+      ratioSQ: deudaSQ / pib * 100,
+      intSQ, intProg,
+    });
+  }
+  return rows;
+}
+
+// ============================================================
+// RENDER
+// ============================================================
+let chart1, chart2, chart3;
+
+function render() {
+  const p = getParams();
+  const rows = compute();
+  const last = rows[rows.length - 1];
+  const yr6 = rows.find(r => r.year === 6) || last;
+
+  const reduccionDeuda = last.deudaSQ - last.deudaProg;
+  const reduccionRatio = last.ratioSQ - last.ratioProg;
+  const yrSub100 = rows.find(r => r.ratioProg < 100);
+  const yrSub80  = rows.find(r => r.ratioProg < 80);
+  const yrSub60  = rows.find(r => r.ratioProg < 60);
+
+  // --- KPIs ---
+  $('kpis').innerHTML = `
+    <div class="kpi">
+      <div class="kpi-label">Deuda/PIB hoy</div>
+      <div class="kpi-value">${fmtPct(p.deuda0 / p.pib0 * 100)}</div>
+      <div class="kpi-sub">${fmt(p.deuda0)} M€</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Año 25 · Status quo</div>
+      <div class="kpi-value red">${fmtPct(last.ratioSQ)}</div>
+      <div class="kpi-sub">${fmt(last.deudaSQ)} M€</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Año 25 · Programa</div>
+      <div class="kpi-value blue">${fmtPct(last.ratioProg)}</div>
+      <div class="kpi-sub">${fmt(last.deudaProg)} M€ · −${reduccionRatio.toFixed(0)} pp</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">< 100% deuda/PIB</div>
+      <div class="kpi-value ${yrSub100 ? 'green' : 'red'}">${yrSub100 ? 'Año ' + yrSub100.year : '—'}</div>
+      <div class="kpi-sub">&lt; 80%: ${yrSub80 ? 'Año ' + yrSub80.year : '—'} · &lt; 60%: ${yrSub60 ? 'Año ' + yrSub60.year : '—'}</div>
+    </div>
+    <div class="kpi">
+      <div class="kpi-label">Menos deuda acumulada</div>
+      <div class="kpi-value green">${fmt(reduccionDeuda)} M€</div>
+      <div class="kpi-sub">Mejora año 6: ${fmtSign(Math.round(yr6.programBal))} M€/año</div>
+    </div>
+  `;
+
+  // --- Chart labels ---
+  const labels = rows.map(r => r.year);
+  const labels0 = [0, ...labels]; // include year 0
+
+  // --- Chart common config ---
+  const gc = 'rgba(42, 54, 84, 0.4)';
+  const tc = '#4a5873';
+  const ff = { family: 'IBM Plex Mono', size: 10 };
+  const tt = { backgroundColor: '#0d1320', borderColor: '#2a3654', borderWidth: 1,
+    titleFont: { family: 'IBM Plex Mono', size: 11 },
+    bodyFont: { family: 'IBM Plex Mono', size: 11 }
+  };
+
+  // ---- Chart 1: Debt/GDP ratio ----
+  if (chart1) chart1.destroy();
+  chart1 = new Chart($('chartRatio'), {
+    type: 'line',
+    data: { labels: labels0, datasets: [
+      { label: 'Status quo', data: [p.deuda0/p.pib0*100, ...rows.map(r => r.ratioSQ)],
+        borderColor: '#ef4444', fill: false, tension: 0.3, pointRadius: 0, borderWidth: 2 },
+      { label: 'Programa', data: [p.deuda0/p.pib0*100, ...rows.map(r => r.ratioProg)],
+        borderColor: '#3b82f6', fill: false, tension: 0.3, pointRadius: 0, borderWidth: 2.5 },
+      { label: '80%', data: labels0.map(() => 80),
+        borderColor: '#f59e0b44', borderDash: [6,4], pointRadius: 0, borderWidth: 1, fill: false },
+      { label: '60%', data: labels0.map(() => 60),
+        borderColor: '#4a587366', borderDash: [6,4], pointRadius: 0, borderWidth: 1, fill: false },
+    ]},
+    options: { responsive: true, plugins: {
+      legend: { display: false },
+      tooltip: { ...tt, callbacks: { label: c => c.dataset.label + ': ' + c.parsed.y.toFixed(1) + '%' } }
+    }, scales: {
+      x: { grid: { color: gc }, ticks: { color: tc, font: ff } },
+      y: { grid: { color: gc }, ticks: { color: tc, font: ff, callback: v => v + '%' } }
+    }}
+  });
+
+  // ---- Chart 2: Decomposition stacked bar ----
+  if (chart2) chart2.destroy();
+  chart2 = new Chart($('chartMejora'), {
+    type: 'bar',
+    data: { labels, datasets: [
+      { label: 'Estático', data: rows.map(r => Math.round(r.estatico)),
+        backgroundColor: 'rgba(245, 158, 11, 0.7)', stack: 's' },
+      { label: 'Pensiones', data: rows.map(r => Math.round(r.pensionSav)),
+        backgroundColor: 'rgba(244, 63, 94, 0.7)', stack: 's' },
+      { label: 'Dinámicos', data: rows.map(r => Math.round(r.dinamicos)),
+        backgroundColor: 'rgba(59, 130, 246, 0.7)', stack: 's' },
+      { label: 'Universidad', data: rows.map(r => Math.round(r.repagoUni)),
+        backgroundColor: 'rgba(167, 139, 250, 0.7)', stack: 's' },
+      { label: 'Intereses', data: rows.map(r => Math.round(r.ahorroInt)),
+        backgroundColor: 'rgba(6, 182, 212, 0.7)', stack: 's' },
+      { label: 'Total', data: rows.map(r => Math.round(r.programBal)),
+        borderColor: '#22c55e', backgroundColor: 'transparent',
+        type: 'line', tension: 0.3, pointRadius: 0, borderWidth: 2 }
+    ]},
+    options: { responsive: true, plugins: {
+      legend: { display: false },
+      tooltip: { ...tt, callbacks: { label: c => c.dataset.label + ': ' + fmtSign(c.parsed.y) + ' M€' } }
+    }, scales: {
+      x: { grid: { color: gc }, ticks: { color: tc, font: ff } },
+      y: { stacked: true, grid: { color: gc }, ticks: { color: tc, font: ff, callback: v => fmtSign(v) } }
+    }}
+  });
+
+  // ---- Chart 3: Absolute debt + interest ----
+  if (chart3) chart3.destroy();
+  chart3 = new Chart($('chartAbs'), {
+    type: 'line',
+    data: { labels: labels0, datasets: [
+      { label: 'Deuda SQ', data: [p.deuda0, ...rows.map(r => r.deudaSQ)],
+        borderColor: '#ef4444', tension: 0.3, pointRadius: 0, borderWidth: 2, yAxisID: 'y' },
+      { label: 'Deuda prog', data: [p.deuda0, ...rows.map(r => r.deudaProg)],
+        borderColor: '#3b82f6', tension: 0.3, pointRadius: 0, borderWidth: 2.5, yAxisID: 'y' },
+      { label: 'Intereses SQ', data: [p.deuda0*p.tipoDeuda, ...rows.map(r => r.intSQ)],
+        borderColor: '#f59e0b', tension: 0.3, pointRadius: 0, borderWidth: 1.5, borderDash: [4,3], yAxisID: 'y2' },
+      { label: 'Intereses prog', data: [p.deuda0*p.tipoDeuda, ...rows.map(r => r.intProg)],
+        borderColor: '#06b6d4', tension: 0.3, pointRadius: 0, borderWidth: 1.5, borderDash: [4,3], yAxisID: 'y2' }
+    ]},
+    options: { responsive: true, plugins: {
+      legend: { display: false },
+      tooltip: { ...tt, callbacks: { label: c => c.dataset.label + ': ' + fmt(c.parsed.y) + ' M€' } }
+    }, scales: {
+      x: { grid: { color: gc }, ticks: { color: tc, font: ff } },
+      y:  { position: 'left',  grid: { color: gc }, ticks: { color: tc, font: ff, callback: v => fmt(v) },
+            title: { display: true, text: 'Deuda (M€)', color: tc, font: { family: 'IBM Plex Mono', size: 9 } } },
+      y2: { position: 'right', grid: { drawOnChartArea: false }, ticks: { color: tc, font: ff, callback: v => fmt(v) },
+            title: { display: true, text: 'Intereses (M€/año)', color: tc, font: { family: 'IBM Plex Mono', size: 9 } } }
+    }}
+  });
+
+  // ---- Table ----
+  let html = `<thead><tr>
+    <th>Año</th><th>Estático</th><th>Pensiones</th><th>Dinámicos</th>
+    <th>Univers.</th><th>Intereses</th><th>Privat.</th>
+    <th>Programa</th><th>Déf. previo</th><th>Balance</th>
+    <th>Deuda</th><th>D/PIB</th>
+  </tr></thead><tbody>`;
+
+  html += `<tr style="color:var(--dim)">
+    <td>0</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td><td>—</td>
+    <td>${fmt(p.deuda0)}</td><td>${fmtPct(p.deuda0/p.pib0*100)}</td>
+  </tr>`;
+
+  for (const r of rows) {
+    const c = v => v >= 0 ? 'pos' : 'neg';
+    html += `<tr>
+      <td>${r.year}</td>
+      <td class="${c(r.estatico)}">${fmtSign(r.estatico)}</td>
+      <td class="pos">${fmtSign(r.pensionSav)}</td>
+      <td class="pos">${fmtSign(r.dinamicos)}</td>
+      <td class="pos">${fmtSign(r.repagoUni)}</td>
+      <td class="pos">${fmtSign(r.ahorroInt)}</td>
+      <td>${r.privat > 0 ? '+' + fmt(r.privat) : '—'}</td>
+      <td class="${c(r.programBal)}" style="font-weight:600">${fmtSign(r.programBal)}</td>
+      <td class="neg">−${fmt(r.deficitSQ)}</td>
+      <td class="${c(r.balance)}" style="font-weight:600">${fmtSign(r.balance)}</td>
+      <td>${fmt(r.deudaProg)}</td>
+      <td style="font-weight:600">${fmtPct(r.ratioProg)}</td>
+    </tr>`;
+  }
+  html += '</tbody>';
+  $('tbl').innerHTML = html;
+
+  // ---- Notes ----
+  const esc = { pesimista: 'Pesimista', central: 'Central', optimista: 'Optimista', sinDefensa: 'Central sin defensa' }[p.escenario];
+  const dynMax = { pesimista: 4000, central: 6000, optimista: 8000, sinDefensa: 6000 }[p.escenario];
+  const effRate = (p.ipc * 100 * (1 - p.rotacion)).toFixed(2);
+  $('notes').innerHTML = `
+    <strong>Modelo unificado (${esc}):</strong><br>
+    — <strong>Estático:</strong> Ingresos ganados (${fmt(REV_GAINED)}) − perdidos (${fmt(REV_LOST)}) + ahorro gasto no pensiones (${fmt(SPEND_SAVED)}) − nuevo gasto (${fmt(sinDef ? NEW_SPEND - DEFENSE : NEW_SPEND)}). Fase de implantación en 5 años. Estático a régimen: ${fmtSign(REV_GAINED - REV_LOST + SPEND_SAVED - (sinDef ? NEW_SPEND - DEFENSE : NEW_SPEND))} M€/año.<br>
+    — <strong>Pensiones:</strong> Ahorro = ${fmt(p.pensionBase)} M€ × ((1+IPC)<sup>t</sup> − (1+IPC×${Math.round(p.rotacion*100)}%)<sup>t</sup>). Sin congelación, el gasto crece al IPC (${(p.ipc*100).toFixed(1)}%). Con congelación, crece al ${effRate}% por entrada de nuevos jubilados con pensión inicial más alta. El ahorro es la brecha entre ambas trayectorias.<br>
+    — <strong>Dinámicos:</strong> +${fmt(dynMax)} M€/año en el escenario ${esc.toLowerCase()} (fase-in 5 años, crecimiento lento después hasta ×1,42).<br>
+    — <strong>Universidad:</strong> Repago de préstamos universitarios: +${fmt(p.uniRepago)} M€/año a régimen (fase-in años 4-12; los primeros graduados empiezan a devolver ~4 años tras la implantación).<br>
+    — <strong>Intereses:</strong> Cada euro de deuda reducida ahorra ${(p.tipoDeuda*100).toFixed(1)}% anual en intereses. Efecto compuesto: cuanta más deuda se amortiza, más se ahorra, lo que permite amortizar más.<br>
+    — <strong>Privatizaciones:</strong> ${fmt(p.privatiz)} M€ repartidos en años 1-5, destinados íntegramente a amortizar deuda.<br>
+    — <strong>Déficit previo:</strong> ${(p.deficitBase*100).toFixed(1)}% del PIB, constante. El programa debe superar este umbral para generar superávit.
+  `;
+}
+
+// ============================================================
+// EVENT LISTENERS
+// ============================================================
+let timer;
+document.querySelectorAll('input, select').forEach(el => {
+  el.addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(render, 150); });
+});
+render();
+</script>
+</body>
+</html>

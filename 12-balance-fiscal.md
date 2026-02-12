@@ -4,7 +4,7 @@ Análisis estático del impacto fiscal neto del programa. Todas las cifras son e
 
 Base de ingresos 2024: IRPF 129.408 M€, IS 39.096 M€, IVA 90.541 M€, IIEE 22.128 M€, cotizaciones sociales 199.595 M€. Ingresos tributarios totales: 294.734 M€.
 
-## 1. Ingresos que se pierden: −66.060 M€
+## 1. Ingresos que se pierden: −50.510 M€
 
 Impuestos eliminados por el programa cuya recaudación actual se pierde íntegramente:
 
@@ -26,12 +26,12 @@ Impuestos eliminados por el programa cuya recaudación actual se pierde íntegra
 
 Ingresos que se pierden por nuevas exenciones y eliminaciones del programa:
 
-- Exención IRPF por hijos (1/3 cuota primer hijo, 2/3 segundo, total tercero y siguientes; tope 1× SMI anual por hijo): −8.500 (estimación)
+- Exención IRPF por hijos (1/3 cuota primer hijo, 2/3 segundo, total tercero y siguientes; tope 1× SMI anual por hijo): −7.000 (estimación). El tope limita el beneficio de las rentas altas: la exención por cada hijo no puede superar ~15.900 €/año. Para la mayoría de familias (rentas medias) el tope no aplica; el ahorro respecto al escenario sin tope se estima en ~1.500 M€
 - Exención IRPF discapacidad >30% y personas dependientes: −2.200 (estimación)
 - IVA tipo 0 para alimentos primarios, higiene y productos para bebés (vs. actual 4%): −1.300 (estimación)
 - Eliminación del copago farmacéutico: −1.100 (estimación)
 - Eliminación de tasas judiciales: −350 (estimación)
-- IS modelo estonio (0% sobre beneficios retenidos): −15.000 (estimación). Actualmente el IS grava todos los beneficios. Con el modelo estonio, solo se gravan los distribuidos. Estimación moderada asumiendo que ~60% de los beneficios se distribuyen en estado estacionario. Con respuesta conductual (más retención por incentivo del 0%), la pérdida podría ser mayor a corto plazo.
+- Exención de ganancias patrimoniales para jubilados con ≥25 años cotizados: −950 (estimación). Las ganancias patrimoniales recaudan ~3.500-4.000 M€/año. Los jubilados representan un 20-30% de las realizaciones (venta de segunda vivienda, fondos, acciones acumuladas). Rango: −700 a −1.200 M€; se toma el punto medio.
 
 ## 2. Ingresos nuevos o recuperados: +20.250 M€
 
@@ -48,7 +48,7 @@ Recaudación adicional generada por ampliación de bases imponibles, supresión 
 - Reducción del fraude por simplificación fiscal (1-2% de la base tributaria): +2.500. Un sistema con tres impuestos, sin regímenes especiales ni deducciones, reduce drásticamente las oportunidades de planificación fiscal agresiva y fraude.
 - Suelo régimen foral eliminado (recaudación neta País Vasco + Navarra): +1.350. País Vasco y Navarra dejan de recaudar ~25.000 M€/año en impuestos propios y pasan a tributar al Estado, que asume también sus competencias de gasto. Saldo neto estimado tras homogeneizar recaudación y gasto per cápita.
 
-## 3. Ahorro en gasto público: +46.190 M€
+## 3. Ahorro en gasto público: +57.690 M€
 
 Gasto público que desaparece por supresión de estructuras, organismos, prestaciones y duplicidades:
 
@@ -75,7 +75,7 @@ Empleo público:
 
 Prestaciones sociales:
 - Eliminación de la pensión de viudedad (solo nuevas altas, efecto gradual): +300
-- Revalorización de pensiones al IPC−1% durante 4 años: +3.500. Ahorro medio anual. Gasto en pensiones contributivas ~190.000 M€/año. Una revalorización un punto por debajo del IPC ahorra ~1.900 M€ el primer año, con efecto acumulativo. Suelo del 0% si IPC < 1%.
+- Congelación nominal de pensiones no mínimas: +15.000 (estimación a año 5). Gasto en pensiones contributivas ~190.000 M€/año, del que ~155.000 corresponde a pensiones no mínimas. Las pensiones mínimas se revalorizan al IPC; el resto quedan congeladas nominalmente. Con inflación del ~2,5%, el ahorro crece cada año: ~3.500 M€ el primero, ~15.000 a año 5, ~28.000 a año 10. Se usa el año 5 como referencia del balance estático. El ahorro creciente se modela en la proyección dinámica.
 - Reducción de la prestación por desempleo de 18 a 12 meses: +2.800
 - Eliminación de la formación para el empleo: +1.500
 - Supresión del FOGASA (Fondo de Garantía Salarial): +1.200
@@ -89,7 +89,7 @@ Organismos y entidades:
 
 Sanidad y educación:
 - Centralización de la compra de medicamentos (ahorro estimado 8-12% sobre ~30.000 M€): +3.000
-- Fusión de universidades públicas redundantes (de 50 a 25-30): +1.500. Gasto universitario ~12.000 M€/año. Se racionalizan rectorados, administración y profesorado duplicado en titulaciones idénticas. Nota: el repago de préstamos universitarios (modelo préstamo-renta contingente, ~3.000-4.000 M€/año a régimen completo) no se incluye en este balance estático porque su flujo comienza en el año 4-5 y crece progresivamente. Está modelado en el Balance Fiscal con Análisis Dinámico.
+- Fusión de universidades públicas redundantes (de 50 a 25-30): +1.500. Gasto universitario ~12.000 M€/año. Se racionalizan rectorados, administración y profesorado duplicado en titulaciones idénticas. Nota: el préstamo universitario avalado por el Estado (tipo 0%, repago íntegro en 20 años) es fiscalmente neutro a régimen completo: el Estado avala pero no desembolsa, y el alumno devuelve el 100%. El coste para el Estado se limita al subsidio implícito del tipo 0% y a la cobertura de impagos residuales bajo el aval.
 
 Administración:
 - Ahorro por administración digital (menos oficinas, menos papel): +1.150
@@ -109,7 +109,7 @@ El programa no crea grandes partidas de gasto nuevo porque recentraliza servicio
 - Modernización de regadíos (inversión anualizada): ~500
 - Ampliación del permiso de maternidad/paternidad de 16 a 26 semanas (coste incremental): ~2.100
 
-La partida de defensa representa el 58% del nuevo gasto. Sin ella, el programa tendría un superávit adicional de ~7.430 M€.
+La partida de defensa representa el 60% del nuevo gasto.
 
 ## 5. Buffer de privatizaciones y enajenación de patrimonio: +15.000 M€
 
@@ -121,41 +121,39 @@ Estos ingresos se destinan íntegramente a la amortización de deuda pública (L
 
 |  | M€/año |
 |---|---|
-| Ingresos que se pierden | −66.060 |
+| Ingresos que se pierden | −50.510 |
 | Ingresos nuevos o recuperados | +20.250 |
-| Ahorro en gasto público | +46.190 |
+| Ahorro en gasto público | +57.690 |
 | Nuevo gasto del programa | −18.430 |
-| **Balance recurrente estático** | **−18.050** |
+| **Balance recurrente estático** | **+9.000** |
 | Buffer privatizaciones (one-off) | +15.000 |
 
-El balance estático presenta un déficit adicional de −18.050 M€/año (~1,3% del PIB). Sobre el déficit actual del 2,8% del PIB, el déficit estático total se situaría en ~4,1% del PIB. La mayor parte de este déficit (15.000 M€) se debe al IS estonio, que grava los beneficios retenidos al 0%.
+El balance estático presenta un superávit de +9.000 M€/año (~0,6% del PIB). Sobre el déficit actual del 2,8% del PIB, el déficit total se reduciría a ~2,2% del PIB.
 
-Sin la partida de defensa (11.000 M€), el déficit estático se reduciría a −7.050 M€/año (~0,5% del PIB).
-
-**Importante:** El balance estático infravalora sistemáticamente los ingresos del programa porque el IS estonio es, por diseño, una medida cuyo impacto fiscal se manifiesta vía efectos dinámicos (más inversión, más empleo, más actividad económica), no por recaudación directa. Véase el escenario dinámico a continuación.
+Sin la partida de defensa (11.000 M€), el balance estático arrojaría un superávit de +20.000 M€/año (~1,4% del PIB), reduciendo el déficit total al ~1,4% del PIB.
 
 ## 7. Escenario dinámico (estimación a año 5)
 
-El IS estonio y la simplificación radical del sistema fiscal generan efectos de segunda ronda que el balance estático no captura. La experiencia de Estonia (que adoptó este modelo en 2000) muestra: aumento de la inversión empresarial del 20-30%, fuerte crecimiento del PIB, atracción de inversión extranjera y presupuestos equilibrados a pesar de la menor recaudación por IS.
+La simplificación radical del sistema fiscal genera efectos de segunda ronda que el balance estático no captura. La reducción de 90+ figuras tributarias a 3 impuestos principales, la eliminación de cotizaciones sociales y la supresión de burocracia autonómica generan más actividad económica, más empleo y más recaudación.
 
 Efectos dinámicos estimados a año 5 (M€/año):
 
-- Aumento de la inversión empresarial → más empleo → más IRPF: +3.000 a +5.000. El IS al 0% sobre beneficios retenidos incentiva fuertemente la reinversión. Un aumento del 10% en la inversión empresarial (~25.000 M€) genera empleo adicional y más recaudación por IRPF.
-- Mayor actividad económica → más IVA: +1.000 a +2.000. Más inversión y empleo generan más consumo y más recaudación por IVA.
-- Atracción de inversión extranjera y deslocalización de sedes: +1.000 a +2.000. España se convierte en uno de los regímenes fiscales más competitivos de la UE para empresas que reinvierten. Efecto sede: empresas que tributan 0% si retienen beneficios en España.
+- Más empleo por reducción de la carga sobre el trabajo → más IRPF: +1.000 a +2.000. La eliminación de cotizaciones sociales reduce el coste efectivo del empleo. Más empleo genera más recaudación por IRPF.
+- Mayor actividad económica → más IVA: +500 a +1.000. Más empleo y menos burocracia generan más consumo y más recaudación por IVA.
+- Atracción de inversión extranjera por simplificación fiscal: +500 a +1.000. Un sistema con tres impuestos, sin regímenes especiales y con IS al 25% sin excepciones es competitivo en la UE.
 - Reducción adicional del fraude (prohibición de efectivo B2B, factura electrónica obligatoria, SII): +1.000 a +2.000. Adicional al +2.500 ya contabilizado en el balance estático.
-- Crecimiento de la base imponible del IS: +2.000 a +3.000. A medida que la economía crece, las distribuciones de dividendos también crecen en términos absolutos, recuperando parte de la recaudación.
+- Crecimiento de la base imponible por expansión económica: +500 a +1.000. A medida que la economía crece, las bases imponibles de IRPF, IVA e IS crecen en términos absolutos.
 - Reducción de intereses de deuda por amortización con privatizaciones: +500 a +1.000. La deuda pública actual genera ~40.000 M€/año en intereses. La reducción de principal por enajenaciones ahorra intereses de forma recurrente.
 
 |  | M€/año |
 |---|---|
-| Balance recurrente estático | −18.050 |
-| Efectos dinámicos (estimación central a año 5) | +10.000 a +15.000 |
-| **Balance dinámico estimado** | **−8.050 a −3.050** |
+| Balance recurrente estático | +9.000 |
+| Efectos dinámicos (estimación central a año 5) | +4.000 a +8.000 |
+| **Balance dinámico estimado** | **+13.000 a +17.000** |
 
-Con efectos dinámicos, el déficit adicional del programa se reduce a −8.050 / −3.050 M€/año (0,2%-0,6% del PIB). Sobre el déficit actual del 2,8%, el déficit total se situaría en ~3,0%-3,4% del PIB.
+Con efectos dinámicos, el programa genera un superávit de +13.000 / +17.000 M€/año (~0,9%-1,2% del PIB). Sobre el déficit actual del 2,8%, el déficit total se reduciría a ~1,6%-1,9% del PIB.
 
-Sin la partida de defensa (11.000 M€), el programa en escenario dinámico generaría un resultado de +2.950 a +7.950 M€/año, reduciendo el déficit actual.
+Sin la partida de defensa (11.000 M€), el programa en escenario dinámico generaría un resultado de +24.000 a +28.000 M€/año (~1,6%-1,9% del PIB), reduciendo el déficit total al ~0,9%-1,2% del PIB.
 
 El buffer de privatizaciones (15.000 M€) cubre el gap de los primeros años hasta que los efectos dinámicos maduran.
 
@@ -163,5 +161,5 @@ El buffer de privatizaciones (15.000 M€) cubre el gap de los primeros años ha
 
 - **Neutralidad cotizaciones → IRPF.** El programa elimina ~200.000 M€ en cotizaciones sociales y los integra en el IRPF con tramos 25%/55%. Esta operación se modela como fiscalmente neutra por diseño: la misma carga total se redistribuye.
 - **Suelo foral.** La eliminación del Concierto/Convenio implica que País Vasco y Navarra dejan de recaudar ~25.000 M€/año propios y pasan a tributar al Estado, que asume sus competencias de gasto. Saldo neto: +1.350 M€.
-- **IS estonio: balance estático vs. dinámico.** La pérdida estática de −15.000 M€ asume que los patrones de distribución de dividendos se mantienen (~60% de beneficios distribuidos). En la práctica, la experiencia de Estonia muestra que las empresas retienen más a corto plazo (mayor pérdida estática) pero la economía crece más rápido (mayor compensación dinámica). A largo plazo, el efecto neto depende de la elasticidad de la inversión al tipo impositivo y del multiplicador fiscal, variables que solo pueden estimarse con modelos de equilibrio general.
+- **Congelación de pensiones.** El ahorro de +15.000 M€ es la estimación a año 5 con inflación del ~2,5%. El ahorro es creciente: ~3.500 M€ el primer año, ~28.000 a año 10, ~40.000 a año 15. Se contabiliza el año 5 para alinear el balance estático con el horizonte de maduración de las demás medidas.
 - **Precisión.** Muchas cifras son estimaciones de orden de magnitud. Un balance fiscal riguroso requeriría microsimulación con microdatos de la AEAT, modelos de equilibrio general y scoring dinámico que exceden este ejercicio. Las fuentes marcadas como AEAT proceden de datos publicados; las marcadas como EST son estimaciones propias basadas en datos públicos.

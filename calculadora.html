@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora fiscal — Sistema actual vs. propuesta</title>
+<style>
+  :root {
+    --bg: #0f1117;
+    --card: #1a1d27;
+    --border: #2a2d3a;
+    --text: #e4e4e7;
+    --muted: #9ca3af;
+    --accent: #6366f1;
+    --accent-light: #818cf8;
+    --green: #22c55e;
+    --red: #ef4444;
+    --amber: #f59e0b;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 0.95rem;
+    margin-bottom: 2rem;
+  }
+
+  .input-section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .input-section label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .input-section .hint {
+    color: var(--muted);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .input-row {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .input-group {
+    flex: 1;
+    min-width: 200px;
+  }
+
+  .input-group label {
+    font-size: 0.85rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+
+  input[type="number"], select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--text);
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  input[type="number"]:focus, select:focus {
+    border-color: var(--accent);
+  }
+
+  input[type="number"]::placeholder {
+    color: #555;
+  }
+
+  .results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 700px) {
+    .results { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .card-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .card-badge {
+    font-size: 0.75rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  .badge-current {
+    background: rgba(99, 102, 241, 0.15);
+    color: var(--accent-light);
+  }
+
+  .badge-new {
+    background: rgba(34, 197, 94, 0.15);
+    color: var(--green);
+  }
+
+  .line-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    font-size: 0.9rem;
+  }
+
+  .line-item .label {
+    color: var(--muted);
+  }
+
+  .line-item .value {
+    font-variant-numeric: tabular-nums;
+    font-weight: 500;
+  }
+
+  .line-item.total {
+    border-top: 1px solid var(--border);
+    margin-top: 0.5rem;
+    padding-top: 0.75rem;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+  .line-item.total .label {
+    color: var(--text);
+  }
+
+  .line-item.highlight .value {
+    color: var(--green);
+    font-size: 1.1rem;
+  }
+
+  .neg { color: var(--red); }
+  .pos { color: var(--green); }
+
+  .comparison {
+    margin-top: 2rem;
+  }
+
+  .comparison h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+
+  .comp-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+
+  .comp-table th {
+    text-align: left;
+    padding: 0.75rem 0.5rem;
+    border-bottom: 2px solid var(--border);
+    color: var(--muted);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .comp-table td {
+    padding: 0.6rem 0.5rem;
+    border-bottom: 1px solid var(--border);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .comp-table tr:last-child td {
+    border-bottom: none;
+    font-weight: 700;
+    padding-top: 0.75rem;
+  }
+
+  .comp-table td:not(:first-child) {
+    text-align: right;
+  }
+
+  .comp-table th:not(:first-child) {
+    text-align: right;
+  }
+
+  .diff-positive {
+    color: var(--green);
+    font-weight: 600;
+  }
+
+  .diff-negative {
+    color: var(--red);
+    font-weight: 600;
+  }
+
+  .note {
+    margin-top: 2rem;
+    padding: 1rem 1.25rem;
+    background: rgba(99, 102, 241, 0.08);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    font-size: 0.85rem;
+    color: var(--muted);
+    line-height: 1.7;
+  }
+
+  .note strong {
+    color: var(--text);
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Calculadora fiscal</h1>
+  <p class="subtitle">Compara tu tributación actual con la propuesta del programa, según número de hijos.</p>
+
+  <div class="input-section">
+    <label>Introduce tu salario bruto anual</label>
+    <p class="hint">El salario bruto que aparece en tu nómina (antes de IRPF y cotizaciones del trabajador). No incluyas las cotizaciones del empleador.</p>
+    <div class="input-row">
+      <div class="input-group">
+        <label>Salario bruto anual (€)</label>
+        <input type="number" id="salary" placeholder="30000" min="0" step="500">
+      </div>
+      <div class="input-group">
+        <label>Pagas al año</label>
+        <select id="pagas">
+          <option value="12">12 pagas</option>
+          <option value="14" selected>14 pagas</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div id="output"></div>
+</div>
+
+<script>
+const SMI_ANUAL = 15876;
+
+// --- SISTEMA ACTUAL 2024 ---
+
+function currentEmployeeSS(bruto) {
+  // Cotizaciones a cargo del trabajador (2024):
+  // Contingencias comunes: 4,70%
+  // Desempleo (contrato indefinido): 1,55%
+  // Formación profesional: 0,10%
+  // MEI: 0,12%
+  // Total: 6,47%
+  // Base máxima de cotización 2024: 56.646 €/año (4.720,50 €/mes × 12)
+  const baseMax = 56646;
+  const base = Math.min(bruto, baseMax);
+  return base * 0.0647;
+}
+
+function currentEmployerSS(bruto) {
+  // Cotizaciones a cargo del empleador (2024):
+  // Contingencias comunes: 23,60%
+  // Desempleo (indefinido): 5,50%
+  // Formación profesional: 0,60%
+  // FOGASA: 0,20%
+  // MEI: 0,58%
+  // Total: ~30,48%
+  const baseMax = 56646;
+  const base = Math.min(bruto, baseMax);
+  return base * 0.3048;
+}
+
+function currentIRPF(bruto, numHijos) {
+  const ss = currentEmployeeSS(bruto);
+  // Reducciones por rendimientos del trabajo (Art. 20 LIRPF 2024)
+  let reduccion = 0;
+  const rendNeto = bruto - ss;
+  if (rendNeto <= 14852) {
+    if (rendNeto <= 13115) {
+      reduccion = 7302;
+    } else {
+      reduccion = 7302 - 1.75 * (rendNeto - 13115);
+    }
+    if (reduccion < 0) reduccion = 0;
+  }
+
+  // Base imponible = bruto - SS trabajador - reducción rendimientos del trabajo
+  let baseImponible = rendNeto - reduccion;
+
+  // Mínimo personal y familiar
+  let minimo = 5550; // mínimo personal
+  // Mínimos por descendientes (menores de 25 años convivientes)
+  const minHijos = [0, 2400, 2700, 4000, 4500];
+  for (let i = 0; i < numHijos; i++) {
+    minimo += (i < 4) ? minHijos[i + 1] : 4500;
+  }
+
+  // Cuota sobre la base imponible
+  const cuotaBase = calcTramos2024(Math.max(baseImponible, 0));
+  // Cuota sobre el mínimo (se resta)
+  const cuotaMinimo = calcTramos2024(Math.min(minimo, Math.max(baseImponible, 0)));
+
+  return Math.max(cuotaBase - cuotaMinimo, 0);
+}
+
+function calcTramos2024(base) {
+  // Tramos IRPF 2024 (estatal + autonómico medio):
+  // Hasta 12.450: 19%
+  // 12.450 - 20.200: 24%
+  // 20.200 - 35.200: 30%
+  // 35.200 - 60.000: 37%
+  // 60.000 - 300.000: 45%
+  // Más de 300.000: 47%
+  const tramos = [
+    [12450, 0.19],
+    [20200, 0.24],
+    [35200, 0.30],
+    [60000, 0.37],
+    [300000, 0.45],
+    [Infinity, 0.47]
+  ];
+
+  let cuota = 0;
+  let prev = 0;
+  for (const [limite, tipo] of tramos) {
+    if (base <= prev) break;
+    const tramo = Math.min(base, limite) - prev;
+    cuota += tramo * tipo;
+    prev = limite;
+  }
+  return cuota;
+}
+
+// --- SISTEMA PROPUESTO ---
+
+function newIRPF(brutoAmpliado, numHijos) {
+  // Tramos: 25% hasta 20.000€, 55% a partir de ahí
+  // Sin mínimos, sin deducciones, sin reducciones
+  let cuota = 0;
+  if (brutoAmpliado <= 20000) {
+    cuota = brutoAmpliado * 0.25;
+  } else {
+    cuota = 20000 * 0.25 + (brutoAmpliado - 20000) * 0.55;
+  }
+
+  // Exención por hijos: 1/3 por el primero, 2/3 por el segundo, total desde el tercero
+  // Tope: 1× SMI anual por hijo
+  if (numHijos >= 1) {
+    const exencion1 = Math.min(cuota * (1/3), SMI_ANUAL);
+    cuota -= exencion1;
+  }
+  if (numHijos >= 2) {
+    // 2/3 de la cuota original (antes de la primera exención)
+    const cuotaOriginal = brutoAmpliado <= 20000
+      ? brutoAmpliado * 0.25
+      : 20000 * 0.25 + (brutoAmpliado - 20000) * 0.55;
+    const exencion2 = Math.min(cuotaOriginal * (2/3), SMI_ANUAL);
+    // Recalculamos: la exención total acumulada con 2 hijos es exencion1 + exencion2
+    const exencion1 = Math.min(cuotaOriginal * (1/3), SMI_ANUAL);
+    cuota = cuotaOriginal - exencion1 - exencion2;
+  }
+  if (numHijos >= 3) {
+    // Exención total desde el tercer hijo, pero cada hijo añade hasta 1× SMI
+    const cuotaOriginal = brutoAmpliado <= 20000
+      ? brutoAmpliado * 0.25
+      : 20000 * 0.25 + (brutoAmpliado - 20000) * 0.55;
+    const exencion1 = Math.min(cuotaOriginal * (1/3), SMI_ANUAL);
+    const exencion2 = Math.min(cuotaOriginal * (2/3), SMI_ANUAL);
+    // Tercer hijo y siguientes: exención total, tope SMI por cada uno
+    let exencionExtra = 0;
+    for (let i = 2; i < numHijos; i++) {
+      exencionExtra += SMI_ANUAL;
+    }
+    cuota = cuotaOriginal - exencion1 - exencion2 - exencionExtra;
+  }
+
+  return Math.max(cuota, 0);
+}
+
+// --- FORMATEO ---
+
+function fmt(n) {
+  return n.toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' €';
+}
+
+function fmtMonth(n, pagas) {
+  return (n / pagas).toLocaleString('es-ES', { minimumFractionDigits: 0, maximumFractionDigits: 0 }) + ' €';
+}
+
+function pct(n, total) {
+  if (total === 0) return '0,0%';
+  return (n / total * 100).toLocaleString('es-ES', { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + '%';
+}
+
+// --- RENDER ---
+
+function calculate() {
+  const salaryInput = document.getElementById('salary');
+  const brutoAnual = parseFloat(salaryInput.value);
+  const pagas = parseInt(document.getElementById('pagas').value);
+
+  if (!brutoAnual || brutoAnual <= 0) {
+    document.getElementById('output').innerHTML = '';
+    return;
+  }
+  const ssTrabajadorAnual = currentEmployeeSS(brutoAnual);
+  const ssEmpleadorAnual = currentEmployerSS(brutoAnual);
+  const costeEmpresaAnual = brutoAnual + ssEmpleadorAnual;
+  const brutoAmpliadoAnual = costeEmpresaAnual;
+
+  // Mensualizar: actual en N pagas, propuesto siempre en 12
+  const brutoMensual = brutoAnual / pagas;
+  const ssTrabajadorMes = ssTrabajadorAnual / pagas;
+  const ssEmpleadorMes = ssEmpleadorAnual / pagas;
+  const costeEmpresaMes = costeEmpresaAnual / pagas;
+  const brutoAmpliadoMes = brutoAmpliadoAnual / 12;
+
+  const scenarios = [0, 1, 2, 3];
+  const results = scenarios.map(hijos => {
+    const irpfActualAnual = currentIRPF(brutoAnual, hijos);
+    const netoActualAnual = brutoAnual - ssTrabajadorAnual - irpfActualAnual;
+
+    const irpfNuevoAnual = newIRPF(brutoAmpliadoAnual, hijos);
+    const netoNuevoAnual = brutoAmpliadoAnual - irpfNuevoAnual;
+
+    return {
+      hijos,
+      irpfMesActual: irpfActualAnual / pagas,
+      ssTrabajadorMes,
+      netoMesActual: netoActualAnual / pagas,
+      irpfMesNuevo: irpfNuevoAnual / 12,
+      netoMesNuevo: netoNuevoAnual / 12,
+      diferenciaMes: (netoNuevoAnual / 12) - (netoActualAnual / pagas)
+    };
+  });
+
+  let html = '';
+
+  const r0 = results[0];
+  html += `
+  <div class="results">
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Sistema actual</span>
+        <span class="card-badge badge-current">2024</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Salario bruto</span>
+        <span class="value">${fmt(brutoMensual)}/mes</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Cotizaciones SS (trabajador)</span>
+        <span class="value neg">−${fmt(ssTrabajadorMes)}</span>
+      </div>
+      <div class="line-item">
+        <span class="label">IRPF (sin hijos)</span>
+        <span class="value neg">−${fmt(r0.irpfMesActual)}</span>
+      </div>
+      <div class="line-item total highlight">
+        <span class="label">Neto mensual (${pagas} pagas)</span>
+        <span class="value">${fmt(r0.netoMesActual)}</span>
+      </div>
+      <div class="line-item" style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border);">
+        <span class="label">Coste empresa</span>
+        <span class="value">${fmt(costeEmpresaMes)}/mes</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Cotizaciones SS (empleador)</span>
+        <span class="value" style="color: var(--muted);">${fmt(ssEmpleadorMes)}</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Presión fiscal total</span>
+        <span class="value">${pct(ssTrabajadorMes + ssEmpleadorMes + r0.irpfMesActual, costeEmpresaMes)}</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <span class="card-title">Sistema propuesto</span>
+        <span class="card-badge badge-new">Nuevo</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Salario bruto ampliado</span>
+        <span class="value">${fmt(brutoAmpliadoMes)}/mes</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Cotizaciones SS</span>
+        <span class="value pos">0 €</span>
+      </div>
+      <div class="line-item">
+        <span class="label">IRPF (sin hijos)</span>
+        <span class="value neg">−${fmt(r0.irpfMesNuevo)}</span>
+      </div>
+      <div class="line-item total highlight">
+        <span class="label">Neto mensual (12 pagas)</span>
+        <span class="value">${fmt(r0.netoMesNuevo)}</span>
+      </div>
+      <div class="line-item" style="margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid var(--border);">
+        <span class="label">Coste empresa</span>
+        <span class="value">${fmt(brutoAmpliadoMes)}/mes</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Cotizaciones SS (empleador)</span>
+        <span class="value pos">0 €</span>
+      </div>
+      <div class="line-item">
+        <span class="label">Presión fiscal total</span>
+        <span class="value">${pct(r0.irpfMesNuevo, brutoAmpliadoMes)}</span>
+      </div>
+    </div>
+  </div>`;
+
+  // Comparison table — all monthly
+  html += `
+  <div class="card comparison">
+    <h2>Comparativa por número de hijos (mensual)</h2>
+    <table class="comp-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Sin hijos</th>
+          <th>1 hijo</th>
+          <th>2 hijos</th>
+          <th>3+ hijos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="color: var(--muted)">IRPF actual</td>
+          ${results.map(r => `<td>${fmt(r.irpfMesActual)}</td>`).join('')}
+        </tr>
+        <tr>
+          <td style="color: var(--muted)">SS trabajador actual</td>
+          ${results.map(() => `<td>${fmt(ssTrabajadorMes)}</td>`).join('')}
+        </tr>
+        <tr>
+          <td style="color: var(--muted)">Neto actual (${pagas} pagas)</td>
+          ${results.map(r => `<td>${fmt(r.netoMesActual)}</td>`).join('')}
+        </tr>
+        <tr>
+          <td colspan="5" style="height: 0.5rem; border-bottom: 2px solid var(--border);"></td>
+        </tr>
+        <tr>
+          <td style="color: var(--muted)">IRPF propuesto</td>
+          ${results.map(r => `<td>${fmt(r.irpfMesNuevo)}</td>`).join('')}
+        </tr>
+        <tr>
+          <td style="color: var(--muted)">Neto propuesto (12 pagas)</td>
+          ${results.map(r => `<td>${fmt(r.netoMesNuevo)}</td>`).join('')}
+        </tr>
+        <tr>
+          <td><strong>Diferencia mensual</strong></td>
+          ${results.map(r => {
+            const cls = r.diferenciaMes >= 0 ? 'diff-positive' : 'diff-negative';
+            const sign = r.diferenciaMes >= 0 ? '+' : '';
+            return `<td class="${cls}">${sign}${fmt(r.diferenciaMes)}</td>`;
+          }).join('')}
+        </tr>
+      </tbody>
+    </table>
+  </div>`;
+
+  html += `
+  <div class="note">
+    <strong>Notas:</strong><br>
+    — El <strong>bruto ampliado</strong> en el sistema propuesto es el coste total actual de la empresa (bruto + cotizaciones del empleador), repartido en 12 pagas. El empleador paga lo mismo; el trabajador ve toda su retribución.<br>
+    — Sistema actual: IRPF 2024 con tramos 19%-47%, mínimo personal de 5.550 €, mínimos por descendientes, reducción por rendimientos del trabajo. Cotizaciones del trabajador al 6,47% (base máxima 56.646 €/año). Neto en ${pagas} pagas.<br>
+    — Sistema propuesto: IRPF 25%/55% (umbral 20.000 €), sin mínimos ni deducciones. Exención por hijos: 1/3 de la cuota por el primero, 2/3 por el segundo, total desde el tercero. Tope: 1× SMI anual (${SMI_ANUAL.toLocaleString('es-ES')} €) por hijo. Neto en 12 pagas.<br>
+    — No se incluyen: rentas del capital, deducciones autonómicas, situaciones especiales de discapacidad o dependencia.
+  </div>`;
+
+  document.getElementById('output').innerHTML = html;
+}
+
+document.getElementById('salary').addEventListener('input', calculate);
+document.getElementById('pagas').addEventListener('change', calculate);
+
+// Initial render with a default value
+document.getElementById('salary').value = 30000;
+calculate();
+</script>
+
+</body>
+</html>

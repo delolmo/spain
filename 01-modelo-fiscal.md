@@ -3,7 +3,7 @@
 ## Principios y simplificación
 
 - Eliminar el impuesto sobre Transmisiones Patrimoniales
-- Eliminar el impuesto sobre Sucesiones y Donaciones
+- Eliminar el impuesto sobre Sucesiones y Donaciones. **Prohibición de donaciones ascendentes de activos no monetarios** (inmuebles, acciones, participaciones, fondos de inversión y cualquier otro activo susceptible de generar ganancias patrimoniales) de hijos a padres. Las transferencias de dinero, el pago de gastos y cualquier otra ayuda dineraria entre familiares quedan libres y sin límite.
 - Eliminar el impuesto sobre Plusvalía Municipal
 - Eliminar el impuesto sobre Actividades Económicas
 - Eliminar el impuesto sobre el Patrimonio
@@ -30,6 +30,7 @@
 - Rentas del trabajo, rendimientos inmobiliarios y rentas de la actividad económica: tipo del 25% hasta 20.000€ y del 55% a partir de dicha cantidad.
 - Dividendos y participaciones en beneficios: tributarán como rentas del trabajo. El contribuyente podrá deducir de su cuota la parte proporcional del Impuesto de Sociedades satisfecho por la sociedad, garantizando que la carga fiscal total sea idéntica a la de un asalariado con la misma renta.
 - Ganancias patrimoniales e intereses: tipo fijo del 15%.
+- **Exención de ganancias patrimoniales e intereses para jubilados con al menos 25 años cotizados en España.** Tributan al 0% en lugar del 15%. Aplica exclusivamente a activos adquiridos y cuya titularidad constase a nombre del jubilado con anterioridad a la fecha de jubilación (inmuebles, acciones, fondos de inversión y cualquier otro activo). Las ganancias patrimoniales por la venta de activos adquiridos o recibidos por donación después de la jubilación tributan al 15% general, con independencia de su fecha de adquisición original. Excepción: las ganancias por la venta de activos recibidos por herencia *mortis causa* después de la jubilación tributan al 0%.
 - **Reglas anti-arbitraje dividendo/ganancia patrimonial.** (1) La recompra de participaciones o acciones propias por una sociedad tributa en el IRPF del socio como dividendo, no como ganancia patrimonial. (2) Los préstamos de una sociedad a sus socios o personas vinculadas que no se devuelvan en un plazo de 12 meses o que no devenguen un interés de mercado se recalifican como dividendo presunto a efectos del IRPF. (3) Los intereses percibidos por un socio de su propia sociedad tributan como dividendo, no como rendimiento del capital mobiliario. (4) Toda transmisión de participaciones o acciones entre personas o entidades vinculadas tributa como dividendo. Solo tributa al 15% como ganancia patrimonial la venta a un tercero no vinculado.
 - Se suprimen todas las demás categorías, bases imponibles y regímenes especiales de tributación
 - Las indemnizaciones por despido tributan íntegramente en el IRPF como rentas del trabajo, sin exención. La exención actual (hasta 180.000 €) es un subsidio al despido que distorsiona el mercado laboral y beneficia desproporcionadamente a las rentas altas.
@@ -57,7 +58,6 @@
 ## Impuesto de Sociedades
 
 - Pasar el IS al 25%. Sin excepciones.
-- **IS al 0% sobre beneficios no distribuidos (modelo estonio).** Las empresas solo tributan en el IS cuando distribuyen dividendos. Los beneficios reinvertidos en la empresa tributan al 0%. Al distribuir dividendos, se aplica el 25%. Incentivo directo a la reinversión y la capitalización empresarial.
 - Eliminación del mínimo exento y de los tramos reducidos del IS. Todas las sociedades tributan al 25% desde el primer euro de base imponible, sin tipo reducido para pymes ni bases imponibles iniciales bonificadas.
 - **Regla única de deducibilidad en el IS: 100% o nada.** Un gasto es deducible solo si cumple cuatro condiciones simultáneamente: (1) factura electrónica a nombre de la sociedad, (2) emitida por un tercero (no el propio titular o socio), (3) exclusivamente empresarial y (4) no destinado al uso o disfrute personal de socios, administradores o empleados. Si no cumple las cuatro, no es deducible en ninguna proporción. No existen deducciones parciales, gastos mixtos ni porcentajes de uso personal. Se suprimen las tablas de amortización, los límites de gastos financieros (30% EBITDA), los topes de atenciones a clientes y cualquier otra regla específica de deducibilidad. Solo son no deducibles: multas, sanciones, donativos sin contraprestación y retribución de fondos propios.
 - **Eliminación de la deducción de gastos para personas físicas con actividad económica.** Los autónomos que operen como persona física tributan en el IRPF por los ingresos brutos, sin deducción de gastos. Quien necesite deducir gastos empresariales debe constituir una SL.

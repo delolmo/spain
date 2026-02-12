@@ -45,16 +45,19 @@
 
 ### ¿Qué medidas plantea el programa para los pensionistas?
 
-- **Ninguna pensión actual se recorta.** Actualización única por neutralidad fiscal: cada pensión se ajusta al alza para que el neto percibido tras los nuevos tipos (25%/55%) sea idéntico al anterior. Coste fiscal neto cero.
-- **Eliminación del copago farmacéutico.**
-- **Servicio Nacional de Salud único** con receta electrónica y historial centralizado en todo el territorio.
-- **Residencias de ancianos integradas en el Ministerio de Sanidad** con estándares nacionales.
-- **Jubilación a 65 años** sin las ampliaciones progresivas del sistema actual.
+- **Ninguna pensión se reduce nominalmente.** Actualización única por neutralidad fiscal: cada pensión se ajusta al alza para que el neto percibido tras los nuevos tipos (25%/55%) sea idéntico al anterior. El cambio de tramos no les quita ni un euro de neto. Las pensiones mínimas se revalorizan al IPC; el resto quedan congeladas nominalmente, convergiendo progresivamente al SMI por efecto de la inflación.
+- **Eliminación del copago farmacéutico.** Para un pensionista con medicación crónica, el copago actual puede suponer entre 500 y 1.500 €/año. Se elimina íntegramente.
+- **Servicio Nacional de Salud único** sin barreras territoriales: receta electrónica, historial clínico centralizado y la misma atención en cualquier punto de España.
+- **Residencias de ancianos integradas en el Ministerio de Sanidad** con estándares nacionales de calidad, en lugar del actual modelo fragmentado entre CCAA.
+- **Jubilación a 65 años**, frente a los 66-67 del sistema actual (edad creciente).
+- **Eliminación del impuesto de Sucesiones y Donaciones**, que permite transmitir el patrimonio a los hijos sin coste fiscal.
+- **Exención de ganancias patrimoniales e intereses para jubilados con al menos 25 años cotizados en España.** Pueden vender la segunda vivienda, las acciones o los fondos de inversión al 0% en vez del 15%. Has contribuido décadas al Estado; tus ahorros son tuyos.
+- **Factura eléctrica un 15-25% más baja** (~180-300 €/año de ahorro).
 - **Eliminación de tasas judiciales.**
 
 ### ¿Qué medidas plantea el programa para los jóvenes?
 
-- **Matrícula universitaria gratuita** en el momento de cursar los estudios. El estudiante asume el 100% del coste real como préstamo a tipo 0%. Repago: cuota mínima de 100 €/mes una vez superados 25.000 € brutos/año. Cancelación del saldo pendiente a los 20 años. Becas por mérito eximen total o parcialmente.
+- **Matrícula universitaria gratuita** en el momento de cursar los estudios. El estudiante asume el 100% del coste real como préstamo avalado por el Estado a tipo 0%, con repago íntegro en 20 años. Becas por mérito eximen total o parcialmente.
 - **Becas por mérito académico** que eximen total o parcialmente de la obligación de devolución.
 - **Prioridad presupuestaria y de becas a FP dual y titulaciones técnicas.**
 - **Guarderías públicas universales 0-3 años** para jóvenes padres.
@@ -69,7 +72,7 @@ Estimación: **entre un 15% y un 25% de reducción** sobre la factura media actu
 
 - **Eliminación del Impuesto Especial sobre la Electricidad** (5,11% sobre el consumo): ~5% de ahorro en factura.
 - **Eliminación de los recargos de la Ley 15/2012** (7% sobre el valor de la generación, cánones nucleares e hidráulicos): ~3-5% de ahorro.
-- **Eliminación de subvenciones a renovables en los cargos del sistema.** Las primas al régimen especial se eliminan; las renovables compiten en mercado libre sin sobrecoste al consumidor: ~3-5% de ahorro.
+- **Eliminación de subvenciones a la generación en los cargos del sistema.** Las primas al régimen especial se eliminan; todas las tecnologías compiten en mercado libre sin sobrecoste al consumidor: ~3-5% de ahorro.
 - **Reducción de peajes y cargos al mínimo permitido por la UE.** Auditoría y simplificación de los costes regulados del sistema eléctrico: ~3-5% de ahorro.
 - **Extensión de la vida útil de las centrales nucleares.** Sin nuclear, el gas (€50-80/MWh) fija el precio marginal más horas. Mantener ~7 GW nucleares (€10-15/MWh) reduce el precio mayorista: ~2-4% de ahorro.
 - **Interconexiones con Francia y simplificación de trámites para renovables y autoconsumo.** Más oferta en el sistema reduce el precio de casación del pool: ~1-3% a medio plazo.

@@ -36,7 +36,7 @@
 
 - Eliminar subvenciones directas a empresas, salvo obligaciones UE
 - Reducción del gasto público en I+D+i civil a niveles pre-2020, eliminando la inflación de partidas vinculada a fondos Next Generation. La investigación básica se financia vía universidades (ya racionalizadas) y contratos competitivos europeos (Horizon Europe). La I+D aplicada la financia el sector privado.
-- Prestación asistencial única estatal, sustituyendo el IMV y rentas mínimas autonómicas, condicionada a trabajo comunitario o formación, con sanción progresiva por rechazo y límite temporal de 24 meses en 5 años.
+- Prestación asistencial única estatal, sustituyendo el IMV y rentas mínimas autonómicas, condicionada a trabajo comunitario, con sanción progresiva por rechazo y límite temporal de 24 meses en 5 años.
 - Eliminar la financiación pública a partidos políticos, sindicatos y medios de comunicación. Sustitución por una asignación anual por ciudadano que cada persona podrá destinar libremente a la organización de su elección.
 - Eliminar la pensión por viudedad, sin efecto retroactivo
 - Eliminar el copago farmacéutico. El ahorro se obtiene por la centralización de compras y el uso obligatorio de genéricos.
