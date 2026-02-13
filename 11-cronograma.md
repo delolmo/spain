@@ -97,7 +97,7 @@
 - Derogación de la Ley de Igualdad Efectiva (derogación LO 3/2007)
 - Derogación de las leyes de Memoria Democrática e Histórica (Ley 20/2022 y Ley 52/2007)
 
-## Fase 3: Meses 36-48 — Final de legislatura (reforma constitucional — 3/5 de ambas cámaras)
+## Fase 3: Meses 36-48 — Final de legislatura (reforma constitucional — Art. 168 CE)
 
 Tres votos de reforma constitucional votados por separado:
 
@@ -132,14 +132,12 @@ Tres votos de reforma constitucional votados por separado:
 
 Secuencia procedimental:
 
-1. Las Cortes aprueban el Voto 3 por 3/5 del Congreso (210 votos) y 3/5 del Senado (159 votos) — procedimiento del Art. 167 CE.
-2. Las mismas Cortes aprueban el principio de reforma de los Votos 1 y 2 por 2/3 del Congreso (234 votos) y 2/3 del Senado (177 votos) — procedimiento del Art. 168 CE (vigente).
-3. Disolución de las Cortes.
-4. Elecciones generales con el sistema electoral vigente (52 circunscripciones provinciales).
-5. Las nuevas Cortes ratifican los Votos 1 y 2 por 2/3 de ambas cámaras y aprueban los textos definitivos.
-6. Referéndum obligatorio de los tres votos, votados por separado en la misma jornada.
-7. Aprobada la reforma en referéndum, entra en vigor la Constitución reformada (incluida la simplificación del Art. 168 para futuras reformas).
-8. Disolución de las Cortes y elecciones generales con el nuevo sistema electoral (circunscripción única nacional).
+1. Final de legislatura: las Cortes aprueban el principio de reforma de los tres votos por 2/3 del Congreso (234 votos) y 2/3 del Senado (177 votos) — procedimiento del Art. 168 CE.
+2. Disolución de las Cortes.
+3. Elecciones generales con el sistema electoral vigente (52 circunscripciones provinciales).
+4. Las nuevas Cortes ratifican los tres votos por 2/3 de ambas cámaras y aprueban los textos definitivos.
+5. Referéndum obligatorio de los tres votos, votados por separado en la misma jornada.
+6. Aprobada la reforma en referéndum, entra en vigor la Constitución reformada (incluida la simplificación del Art. 168 para futuras reformas).
 
 Aprobada la derogación de la Disposición Adicional Primera (Voto 1), se procederá a la derogación del Concierto Económico con el País Vasco (Ley 12/2002) y del Convenio Económico con Navarra (Ley 28/1990) por ley orgánica, integrando ambas comunidades en el régimen común de financiación autonómica.
 
