@@ -65,7 +65,7 @@
 
 - Derogación de la Ley de Vivienda
 - Plazo máximo de 3 meses para licencias que requieran autorización con silencio positivo
-- Duración libre de contratos de alquiler pactada entre las partes
+- Duración mínima de contratos de alquiler de 2 años (arrendador persona física) y 10 años (arrendador persona jurídica). Por encima del mínimo, duración libre pactada entre las partes
 - Inscripción obligatoria de contratos de alquiler en el Registro de la Propiedad
 - Desahucio exprés por impago en plazo máximo de 30 días
 - Desalojo policial inmediato de ocupación ilegal: quien no conste como propietario ni arrendatario en el Registro será desalojado sin proceso judicial previo

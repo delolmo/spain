@@ -17,6 +17,7 @@
 - Supresión de agencia EFE
 - Eliminación del CIS
 - Supresión del Consejo Económico y Social (CES)
+- **Supresión de las Cámaras Oficiales de Comercio.** Derogación de la Ley 4/2014. Las cámaras pierden su estatus de corporación de derecho público. Las funciones públicas delegadas (certificados de origen, comercio exterior) se transfieren al Registro Mercantil. Los empresarios que deseen asociarse lo harán mediante asociaciones privadas
 - **Eliminación de Diputaciones Provinciales y conversión en Delegaciones del Gobierno.** Las diputaciones provinciales desaparecen como entes locales autónomos. La provincia se mantiene como circunscripción administrativa del Estado. En cada provincia se establece una Delegación del Gobierno que coordina la prestación de los servicios estatales recentralizados (sanidad, educación, seguridad, justicia, Seguridad Social, agricultura, industria, vivienda, consumo) y ejerce las funciones de coordinación con los municipios que antes correspondían a las diputaciones. El personal funcionario de las diputaciones se integra en la Delegación del Gobierno o queda sujeto al procedimiento de recolocación del EBEP reformado
 - Mancomunación obligatoria de servicios municipales básicos para municipios de menos de 20.000 habitantes. Supresión de policías locales en municipios de menos de 10.000 habitantes.
 - Supresión del IDAE y CORES (funciones asumidas por la DG de Energía).

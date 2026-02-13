@@ -24,6 +24,7 @@ Las siguientes materias son competencia exclusiva e indelegable del Estado. Las 
 - **Industria.** Ordenación del sector industrial, seguridad industrial, registros industriales.
 - **Vivienda.** Política nacional de vivienda, promoción de vivienda protegida, registros de demandantes.
 - **Consumo.** Protección de consumidores, inspección y arbitraje de consumo.
+- **Colegios profesionales.** Régimen jurídico único de los colegios profesionales en todo el territorio nacional. Colegiación única nacional: la inscripción en cualquier colegio habilita para ejercer en todo el territorio sin necesidad de segunda colegiación, habilitación ni comunicación. Los colegios profesionales no recibirán financiación pública directa ni indirecta; se financian exclusivamente con las cuotas de sus colegiados.
 
 ### Competencias de las comunidades autónomas
 
@@ -42,9 +43,9 @@ Las comunidades autónomas ejercen competencias en las siguientes materias, con 
 - **Carreteras autonómicas.** Red viaria de titularidad autonómica.
 - **Emergencias y protección civil.** Servicios de bomberos, protección civil, gestión de emergencias no declaradas de interés nacional.
 - **Juego y espectáculos.** Ordenación del juego y de los espectáculos públicos en el ámbito autonómico.
-- **Colegios profesionales.** Tutela de colegios profesionales de ámbito autonómico.
+- **Otras corporaciones de derecho público autonómico** distintas de los colegios profesionales.
 - **Cooperativas y economía social.** Registro y tutela de cooperativas.
-- **Cámaras de comercio y otras corporaciones de derecho público autonómico.**
+- **Otras corporaciones de derecho público autonómico.**
 - **Estadística para fines autonómicos**, sin duplicar las funciones del INE.
 - **Función pública autonómica.** Régimen del personal al servicio de la Administración autonómica, dentro del marco del EBEP reformado.
 
@@ -65,6 +66,7 @@ Las comunidades autónomas ejercen competencias en las siguientes materias, con 
 
 ## Administración
 
+- **Validez nacional de toda autorización administrativa.** Cualquier autorización, licencia, inscripción, habilitación o acreditación emitida por cualquier Administración española es válida en todo el territorio nacional. Ninguna Administración podrá exigir una segunda autorización, homologación o registro para el ejercicio de una actividad ya autorizada en otra parte del territorio. Incluye, entre otras: autorizaciones de seguridad industrial, habilitaciones de instaladores, licencias de actividad, inscripciones en registros sectoriales y acreditaciones profesionales.
 - Eliminación de certificados de estar al corriente. La Administración consultará directamente a la Agencia Tributaria mediante sistema de verificación *zero-knowledge* que devuelve únicamente "cumple/no cumple" sin revelar datos adicionales. El ciudadano y la empresa no tienen que solicitar ni aportar certificados. El certificado de la Seguridad Social desaparece al eliminarse las cotizaciones sociales.
 - **Prohibición de solicitar certificados de antecedentes penales.** La Administración no puede exigir al ciudadano un certificado de antecedentes. En su lugar, realiza una consulta *zero-knowledge* a la base de datos penal con una pregunta específica (p.ej. "¿tiene antecedentes que inhabiliten para trabajar con menores?"). El sistema devuelve únicamente "sí/no" sin revelar el contenido de los antecedentes. El ciudadano nunca tiene que solicitar ni aportar certificados de penales.
 - **Registro Mercantil único nacional.** Supresión de los registros mercantiles provinciales y autonómicos. Integra los registros de asociaciones y fundaciones (que pasan a ser sociedades sin ánimo de lucro) y de cooperativas. Tramitación 100% online. Datos públicos y accesibles mediante API abierta: cualquier ciudadano o empresa puede consultar y descargar información societaria sin restricciones. Toda empresa se constituye con sede digital por defecto (sin local físico obligatorio). El domicilio y las actividades económicas se inscriben en el Registro Mercantil, que se sincroniza automáticamente con la Agencia Tributaria. Si la empresa dispone de locales físicos, se vinculan mediante su Identificador de Inmueble (IdI); el municipio correspondiente recibe notificación automática a efectos de licencias de actividad, inspecciones y tasas. Eliminación del modelo 036/037 como trámite separado.
@@ -117,6 +119,7 @@ Las comunidades autónomas ejercen competencias en las siguientes materias, con 
 - **Plazo máximo de prórroga forzosa de 12 meses.** Los contratos de concesión de servicios públicos expirados no podrán mantenerse por continuidad del servicio más de 12 meses desde su vencimiento. En ese plazo, la Administración titular deberá haber adjudicado un nuevo contrato o asumido la gestión directa del servicio. Transcurrido el plazo sin actuación, el contrato se extingue de pleno derecho.
 - **Registro Central de Contratos del Sector Público.** Todas las Administraciones están obligadas a inscribir todos sus contratos públicos (obras, servicios, suministros, concesiones), con fecha de inicio, duración, prórrogas, importe y vencimiento. El registro publica automáticamente las concesiones de servicios que se encuentren a menos de 12 meses de su vencimiento y las que hayan expirado. Datos públicos y accesibles mediante API abierta.
 - **Publicación obligatoria de contratos menores.** Todos los contratos menores se inscriben en el Registro Central de Contratos del Sector Público con identificación del adjudicatario, objeto, importe y fecha. Se publican trimestralmente de forma agregada por órgano de contratación, permitiendo detectar fraccionamientos y concentraciones de adjudicaciones en un mismo proveedor.
+- **Prohibición de empresas mixtas.** Las Administraciones públicas no podrán participar en el capital de sociedades junto con socios privados. Los servicios públicos se prestan mediante gestión directa o mediante concesión a empresa privada licitada conforme a la LCSP. Las empresas mixtas existentes disponen de 24 meses para disolverse. La Administración enajena su participación al socio privado y formaliza un nuevo contrato de concesión con este en condiciones de mercado, sin necesidad de nueva licitación. El contrato de concesión queda sujeto íntegramente a la LCSP desde su formalización.
 - **Intervención subsidiaria.** Si la Administración titular no actúa en el plazo de 12 meses, la comunidad autónoma — o el Estado si el servicio es de competencia estatal — podrá licitar el contrato en su nombre y repercutir los costes a la Administración titular.
 
 ## Procedimiento administrativo
@@ -128,11 +131,16 @@ Las comunidades autónomas ejercen competencias en las siguientes materias, con 
   - **Tribunal Administrativo de Procedimientos Comunes** (todos los demás actos administrativos — nueva creación).
 - Los tribunales administrativos podrán establecer secciones territoriales en función del volumen de reclamaciones. Las secciones territoriales forman parte del tribunal central, dependen orgánicamente del Senado y aplican la misma doctrina y ley procesal.
 - Plazo máximo de resolución de 1 mes. La reclamación ante el tribunal administrativo es voluntaria: el ciudadano puede optar por acudir directamente a la jurisdicción contencioso-administrativa.
+- **Resolución automatizada para supuestos tasados.** Los tribunales administrativos resolverán de forma automatizada los casos objetivos que no requieran valoración discrecional: silencio administrativo con plazo vencido, sanciones dictadas fuera de plazo, liquidaciones con error aritmético y concesiones expiradas sin nueva licitación. El ciudadano puede solicitar revisión humana de la resolución automatizada.
 - **Responsabilidad disciplinaria por inactividad.** El incumplimiento reiterado de plazos de resolución por parte de un funcionario constituye falta disciplinaria.
 
 ## Justicia
 
 - Unificación de bases de datos judiciales y expediente judicial electrónico único
+- **Asistencia obligatoria por inteligencia artificial.** Todos los juzgados y tribunales dispondrán de un sistema de IA que asista al juez en: redacción de borradores de resolución, análisis de jurisprudencia aplicable, detección de vicios procesales y clasificación de casos por complejidad. El juez mantiene en todo momento la decisión final.
+- **Resolución automatizada de procedimientos monitorios.** Los procedimientos monitorios no contestados en plazo se resuelven automáticamente sin intervención judicial. El deudor conserva el derecho de oposición.
+- **Plazos máximos de resolución por tipo de procedimiento.** La ley fijará plazos máximos para dictar sentencia o resolución en cada orden jurisdiccional. El incumplimiento reiterado de plazos constituye falta disciplinaria.
+- **Prioridad de tramitación escrita.** En los procedimientos civiles y contencioso-administrativos, las partes podrán renunciar de común acuerdo a la vista oral, resolviéndose el asunto por escrito.
 
 ## Preguntas frecuentes
 

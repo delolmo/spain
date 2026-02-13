@@ -27,7 +27,7 @@
 - Funcionarios: trienios, productividad, jornada 40h, eventuales, interinos (RD Leg. 5/2015 EBEP)
 - Reforma de pensiones completa (LGSS)
 - Derogación de la Ley de Vivienda (Ley 12/2023)
-- Desahucio exprés, duración libre de contratos, inscripción obligatoria (LEC Ley 1/2000 + LAU Ley 29/1994)
+- Desahucio exprés, duración mínima 2 años (persona física) / 10 años (persona jurídica), inscripción obligatoria (LEC Ley 1/2000 + LAU Ley 29/1994; derogación RDL 7/2019)
 - Derogación de la Ley de Subvenciones (Ley 38/2003)
 - Eliminación de subvenciones a empresas, cine, transporte, bonos jóvenes (Ley 38/2003 + leyes sectoriales)
 - Reducción del gasto público en I+D+i civil a niveles pre-2020; supresión de la AEI e integración en el CSIC (Ley de PGE + Plan Estatal de Investigación)
@@ -56,7 +56,7 @@
 - Compensación por accidente laboral sin litigio, modelo neozelandés: compensación automática del Estado, sin demanda al empleador (ley nueva)
 - Libertad total de pluriactividad; combinación libre de empleo y actividad propia sin restricción (Estatuto de los Trabajadores + Ley 20/2007)
 - Administración digital: ID única, back office, registros, silencio positivo (Ley 39/2015 LPAC + Ley 40/2015 LRJSP)
-- Reforma de la contratación pública (Ley 9/2017 LCSP): plazo máximo de 12 meses de prórroga forzosa para concesiones expiradas, Registro Central de Contratos del Sector Público con publicación automática de vencimientos de concesiones, intervención subsidiaria de la CCAA o el Estado si la Administración titular no actúa en plazo
+- Reforma de la contratación pública (Ley 9/2017 LCSP): plazo máximo de 12 meses de prórroga forzosa para concesiones expiradas, Registro Central de Contratos del Sector Público con publicación automática de vencimientos de concesiones, intervención subsidiaria de la CCAA o el Estado si la Administración titular no actúa en plazo, prohibición de empresas mixtas (disolución en 24 meses)
 - Reforma del procedimiento administrativo (Ley 39/2015 LPAC): supresión de los recursos de alzada y reposición; tres tribunales administrativos independientes adscritos al Senado (Recursos Contractuales, Recursos Tributarios, Procedimientos Comunes); secciones territoriales según volumen; plazo máximo de resolución de 1 mes; responsabilidad disciplinaria por inactividad
 - Employer of Record (ley nueva)
 - Cambio de franja horaria (Real Decreto)
@@ -69,12 +69,16 @@
 - Ferrocarriles: plan de inversión prioritaria AVE radial (Madrid–Barcelona, Madrid–Sevilla, Madrid–Valencia)
 - Protección frente a inundaciones: obligación de las Confederaciones Hidrográficas de ejecutar infraestructuras para periodo de retorno de 500 años, con plazos y financiación finalista (reforma RD Leg. 1/2001 Ley de Aguas)
 - Reforma integral de la Ley de Haciendas Locales (RDL 2/2004): IBI como único impuesto municipal, catálogo cerrado de tasas, principio de recuperación íntegra de costes en todas las tasas por servicios, equilibrio presupuestario obligatorio y regulación del endeudamiento municipal
+- Sustitución de la Ley de Unidad de Mercado (Ley 20/2013) por nueva Ley de Garantía de la Unidad de Mercado
+- Supresión de las Cámaras Oficiales de Comercio (derogación Ley 4/2014); funciones públicas al Registro Mercantil
+- Derogación de la Ley 15/2022 integral para la igualdad de trato y la no discriminación
 - Supresión del servicio de traducción e interpretación de lenguas cooficiales en el Congreso y el Senado (reforma de los Reglamentos de las Cámaras)
 
 ## Fase 2: Meses 6-18 — Mayoría absoluta (176 votos — leyes orgánicas)
 
-- Recentralización educativa: nueva Ley Orgánica de Educación (deroga LOMLOE, LO 3/2020). Incluye: castellano como única lengua vehicular, reválida nacional de ESO, PAU única nacional, MIR educativo (oposición nacional + residencia de 2 años), evaluación periódica del profesorado, prohibición de promoción con suspensas, certificación B2 obligatoria para ESO, fusión de universidades y préstamo universitario avalado por el Estado (100% coste real, tipo 0%, repago íntegro en 20 años)
-- Recentralización sanitaria: creación del Centro de Control de Enfermedades (CCE), ley de armonización (Art. 150.3 CE) + reforma Ley 16/2003 de Cohesión del SNS
+- Recentralización educativa: nueva Ley Orgánica de Educación (deroga LOMLOE, LO 3/2020). Incluye: castellano como única lengua vehicular, reválida nacional de ESO, PAU única nacional, MIR educativo (oposición nacional + residencia de 2 años), evaluación periódica del profesorado, prohibición de promoción con suspensas, certificación B2 obligatoria para ESO
+- Reforma integral de la LOSU (LO 2/2023): fusión de universidades redundantes (de 50 a 25-30), cupos nacionales por titulación, carrera académica meritocrática con exigencia de movilidad, prohibición de endogamia (no acceso a plaza permanente en el departamento de formación), préstamo universitario avalado por el Estado (100% coste real, tipo 0%, repago íntegro en 20 años), prohibición de asociaciones políticas en universidades, prohibición de competencia desleal con el sector privado, control fiscal de fondos de investigación (IRPF + IVA)
+- Recentralización sanitaria: creación del Centro de Control de Enfermedades (CCE), derogación de la Ley General de Sanidad (Ley 14/1986) y de la Ley 16/2003 de Cohesión del SNS; nueva ley del Servicio Nacional de Salud único
 - Supresión de MUFACE, MUGEJU e ISFAS: integración de todos los beneficiarios en el SNS ya recentralizado (reforma LGSS + leyes reguladoras de cada mutualidad)
 - Supresión de policías autonómicas: reforma de Estatutos de Autonomía del País Vasco, Cataluña, Navarra y Canarias (LO)
 - Oposición nacional única para todos los cuerpos (EBEP con rango orgánico + LO de educación + LO sanitaria)
@@ -93,7 +97,8 @@
 - Desalojo inmediato de ocupación ilegal (reforma Código Penal + LEC)
 - Justicia: expediente electrónico único (reforma LO 6/1985 LOPJ)
 - Financiación de partidos (reforma LO 8/2007)
-- Eliminación de impuestos propios de las CCAA (reforma LO 8/1980 LOFCA)
+- Derogación de la LOFCA (LO 8/1980) y de la Ley 22/2009 del sistema de financiación: sustitución por el modelo de transferencia única (Arts. 156-158 CE reformados)
+- Derogación de la LO 10/2022 ("Solo sí es sí"); revisión de tipos y penas de delitos contra la libertad sexual en el Código Penal
 - Reforma electoral parcial: umbral del 3% (reforma LO 5/1985 LOREG)
 - Eliminación de Diputaciones: vaciamiento competencial (reforma LRBRL + ley de armonización)
 - Mancomunación obligatoria + supresión de policías locales <10.000 hab. (reforma LRBRL)
@@ -115,6 +120,7 @@ Tres votos de reforma constitucional votados por separado:
 - Competencias exclusivas del Estado (reforma Art. 149.1 CE): son competencia exclusiva del Estado la educación, la sanidad, la protección de menores, la administración de justicia y la seguridad pública en todo el territorio nacional, incluyendo la gestión directa de los servicios, el personal y los medios materiales. Las comunidades autónomas no podrán asumir competencias legislativas ni ejecutivas en estas materias.
 - Financiación autonómica (reforma Arts. 156, 157 y 158 CE): las comunidades autónomas gozarán de autonomía presupuestaria para la distribución y ejecución del gasto en las competencias que les sean atribuidas, con arreglo al principio de solidaridad entre todos los españoles. Sus recursos estarán constituidos exclusivamente por la transferencia anual con cargo a los Presupuestos Generales del Estado y por los rendimientos procedentes de su patrimonio. Las comunidades autónomas no podrán establecer impuestos, tasas, contribuciones especiales, recargos ni tributos de ninguna clase. Los Presupuestos Generales del Estado consignarán la transferencia anual a cada comunidad autónoma, distribuida conforme a criterios objetivos de población, renta, superficie, dispersión geográfica, envejecimiento e insularidad, fijados por ley orgánica. La transferencia será global y no finalista.
 - Financiación municipal (reforma Art. 142 CE): las haciendas locales dispondrán de los medios suficientes para el desempeño de sus funciones. Se financiarán exclusivamente mediante sus tributos propios y las transferencias que reciban de su comunidad autónoma. El Estado no podrá realizar transferencias directas ni indirectas a las entidades locales.
+- Supresión del Consejo Económico y Social (reforma Art. 131.2 CE)
 - Prohibición constitucional de endeudamiento autonómico y municipal (reforma Art. 135 CE): las comunidades autónomas y las entidades locales no podrán emitir deuda pública ni contraer crédito en ninguna forma. Solo el Estado podrá emitir deuda pública o contraer crédito, con sujeción a los límites de déficit y deuda establecidos por la Unión Europea. El Estado asumirá la totalidad de la deuda viva de las comunidades autónomas en el momento de entrada en vigor de la reforma.
 - Simplificación del procedimiento de reforma constitucional agravado (reforma Art. 168 CE): la reforma de los títulos protegidos (Título Preliminar, Sección 1.ª del Capítulo II del Título I y Título II) requerirá aprobación por 2/3 del Congreso y 2/3 del Senado y referéndum obligatorio aprobado por 2/3 de los votos válidos emitidos. Se suprime la exigencia de disolución de las Cortes y ratificación por unas nuevas Cortes.
 
