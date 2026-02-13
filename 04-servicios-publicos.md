@@ -30,7 +30,7 @@
 ## Educación
 
 - Creación de un Servicio Nacional de Educación único. Supresión de las consejerías autonómicas de educación.
-- Castellano como única lengua vehicular de la enseñanza en todo el territorio nacional (rango constitucional, Art. 3 CE reformado). Las lenguas regionales podrán utilizarse exclusivamente para impartir su propia asignatura, del mismo modo que el inglés u otros idiomas extranjeros se usan solo en su materia correspondiente.
+- Castellano como única lengua vehicular de la enseñanza en todo el territorio nacional. Las lenguas regionales podrán utilizarse exclusivamente para impartir su propia asignatura, del mismo modo que el inglés u otros idiomas extranjeros se usan solo en su materia correspondiente.
 - Currículo único nacional y evaluaciones únicas
 - Libertad de elección de centro
 - Financiación pública por alumno independientemente de la titularidad del centro.

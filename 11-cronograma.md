@@ -99,7 +99,7 @@
 
 ## Fase 3: Meses 36-48 — Final de legislatura (reforma constitucional — 3/5 de ambas cámaras)
 
-Tres proyectos de reforma constitucional votados por separado:
+Tres votos de reforma constitucional votados por separado:
 
 ### Voto 1: Reforma del sistema político y territorial
 
@@ -110,37 +110,36 @@ Tres proyectos de reforma constitucional votados por separado:
 - Derogación de las cuatro Disposiciones Adicionales y de la Disposición Transitoria Cuarta de la CE. La DA 1.ª ampara los derechos históricos de los territorios forales (Concierto/Convenio); la DA 2.ª protege el derecho civil foral en materia de mayoría de edad; la DA 3.ª exige consulta previa a Canarias para modificar su régimen fiscal; la DA 4.ª permite a las CCAA mantener varias Audiencias Territoriales; la DT 4.ª prevé la incorporación de Navarra al País Vasco a través de órganos forales. Su derogación elimina los blindajes constitucionales que impiden la unificación fiscal, civil, judicial y territorial.
 - Legislación civil única (reforma Art. 149.1.8.ª CE): la legislación civil es competencia exclusiva del Estado en todo el territorio nacional, sin excepción. Se suprime la cláusula que permite a las comunidades autónomas conservar, modificar y desarrollar derechos civiles forales o especiales.
 - Competencias exclusivas del Estado (reforma Art. 149.1 CE): son competencia exclusiva del Estado la educación, la sanidad, la protección de menores, la administración de justicia y la seguridad pública en todo el territorio nacional, incluyendo la gestión directa de los servicios, el personal y los medios materiales. Las comunidades autónomas no podrán asumir competencias legislativas ni ejecutivas en estas materias.
+- Simplificación del procedimiento de reforma constitucional agravado (reforma Art. 168 CE): la reforma de los títulos protegidos (Título Preliminar, Sección 1.ª del Capítulo II del Título I y Título II) requerirá aprobación por 2/3 del Congreso y 2/3 del Senado y referéndum obligatorio aprobado por 2/3 de los votos válidos emitidos. Se suprime la exigencia de disolución de las Cortes y ratificación por unas nuevas Cortes.
 
 ### Voto 2: Derechos y obligaciones
 
 - Definición constitucional de sexo (reforma Art. 14.1 CE): a los efectos de esta Constitución, el sexo es la condición biológica binaria, masculina o femenina, determinada por los cromosomas sexuales. En caso de discordancia entre los marcadores biológicos, la ley determinará el criterio aplicable.
 - Derecho al anonimato digital (nuevo Art. 18.5 CE): toda persona tiene derecho a utilizar servicios digitales sin revelar su identidad. Nadie podrá ser obligado a identificarse como condición de acceso a un servicio digital, salvo cuando una ley lo establezca expresamente por razones de seguridad pública, obligación tributaria o protección de menores. En estos casos, la verificación se realizará mediante sistemas que garanticen la mínima divulgación de datos necesaria.
 - Presunción de inocencia y medidas cautelares (nuevo Art. 24.3 CE): ninguna medida cautelar que restrinja la libertad, el domicilio o las relaciones familiares de una persona podrá adoptarse exclusivamente sobre la base de una denuncia o declaración no corroborada. La adopción de medidas cautelares requerirá indicios objetivos de delito y de riesgo, valorados por el juez de forma motivada e individualizada.
-- Derecho preferente de los padres a la educación de sus hijos (nuevo Art. 39.5 CE): Los padres o tutores legales tienen el derecho preferente a dirigir la educación moral y la formación en valores de sus hijos conforme a sus propias convicciones. Los padres o tutores podrán solicitar la exención de sus hijos de los contenidos curriculares de naturaleza ideológica, moral, sexual o identitaria que consideren contrarios a sus convicciones, siempre que no sean principios y valores consagrados en esta Constitución. Ningún alumno podrá ser discriminado ni evaluado negativamente por ejercer esta exención.
+- Derecho preferente de los padres a la educación de sus hijos (nuevo Art. 39.5 CE): Los padres o tutores legales tienen el derecho preferente a dirigir la educación moral y la formación en valores de sus hijos conforme a sus propias convicciones. Los padres o tutores podrán solicitar la exención de sus hijos de los contenidos curriculares de naturaleza política, ideológica, moral, sexual o identitaria que consideren contrarios a sus convicciones, siempre que no sean principios y valores consagrados en esta Constitución. Ningún alumno podrá ser discriminado ni evaluado negativamente por ejercer esta exención.
 - Protección de la infancia frente a contenidos nocivos (nuevo Art. 39.6 CE): los menores tienen derecho a ser protegidos frente a la exposición a contenidos pornográficos, violentos o que promuevan la sexualización prematura. Los poderes públicos garantizarán mecanismos efectivos de verificación de edad en el acceso a contenidos de naturaleza sexual o violenta, y las restricciones de acceso de menores a los medios, servicios y eventos que los difundan. Queda prohibida la publicidad dirigida a menores basada en el perfilado de sus datos personales.
 - Protección de menores tutelados (nuevo Art. 39.7 CE): los menores bajo tutela del Estado tienen derecho a una atención individualizada que priorice el acogimiento familiar sobre el institucional. Los poderes públicos garantizarán la supervisión independiente de todos los centros de protección de menores y el acompañamiento de los jóvenes tutelados hasta su plena inserción social.
 - Derecho a los cuidados paliativos (nuevo Art. 43.3 CE): toda persona en situación terminal o de sufrimiento grave tiene derecho a recibir cuidados paliativos integrales que garanticen el alivio del dolor y la dignidad en el proceso de morir. Los poderes públicos organizarán estos servicios con cobertura universal en todo el territorio nacional.
-- Objeción de conciencia sanitaria (nuevo Art. 43.4 CE): la ley regulará las condiciones de ejercicio de la objeción de conciencia sanitaria y garantizará la confidencialidad y la privacidad del profesional en el ejercicio de este derecho, si bien ningún profesional sanitario podrá ser obligado a realizar, cooperar o participar en prácticas o intervenciones contrarias a su conciencia, salvo cuando la objeción ponga en riesgo inmediato la vida de un ser humano o impida la prestación de un servicio legalmente exigible que no pueda ser prestado por otro profesional disponible.
+- Objeción de conciencia sanitaria (nuevo Art. 43.4 CE): la ley regulará las condiciones de ejercicio de la objeción de conciencia sanitaria y garantizará la confidencialidad y la privacidad del profesional en el ejercicio de este derecho. Ningún profesional sanitario podrá ser obligado a realizar, cooperar o participar en prácticas o intervenciones contrarias a su conciencia, salvo cuando la objeción ponga en riesgo inmediato la vida de un ser humano o impida la prestación de un servicio legalmente exigible que no pueda ser prestado por otro profesional disponible.
 - Derecho a la no exclusión digital (nuevo Art. 51 bis CE): ninguna persona podrá ser privada del acceso a servicios públicos esenciales ni del ejercicio de sus derechos por no utilizar medios digitales.
 - Derecho al uso de efectivo (nuevo Art. 51 ter CE): toda persona física tiene derecho a utilizar billetes y monedas de curso legal como medio de pago. La ley podrá establecer límites cuantitativos por razones de prevención del blanqueo de capitales o seguridad pública, pero en ningún caso podrá suprimirse el efectivo como medio de pago de aceptación general.
 
-### Voto 3: Lengua vehicular de la enseñanza
-
-- Reforma del Art. 3 CE (lenguas): el castellano es la única lengua vehicular de la enseñanza en todo el territorio nacional. Las demás lenguas españolas podrán ser enseñadas como asignatura en sus respectivos territorios, pero no podrán utilizarse como lengua de instrucción de otras materias.
-
-### Voto 4: Garantías democráticas
+### Voto 3: Garantías democráticas
 
 - Limitación de los decretos-leyes (reforma Art. 86 CE): en caso de extraordinaria y urgente necesidad, el Gobierno podrá dictar disposiciones legislativas provisionales que no podrán afectar al ordenamiento de las instituciones básicas del Estado, a los derechos, deberes y libertades de los ciudadanos regulados en el Título I, al régimen de las comunidades autónomas, al derecho electoral general, a la legislación penal, al régimen tributario estructural ni a la regulación de las condiciones básicas de las relaciones laborales. Cada real decreto-ley se referirá a una única materia o a un conjunto de materias que guarden conexión directa entre sí; no podrán incluirse disposiciones ajenas a la materia principal que justifica la extraordinaria y urgente necesidad. El Congreso deberá pronunciarse expresamente sobre su convalidación o derogación en el plazo de treinta días desde su promulgación, mediante votación de totalidad que requerirá mayoría absoluta.
 - Unidad de materia legislativa (nuevo Art. 88 bis CE): los proyectos y proposiciones de ley se referirán a una materia o a un conjunto de materias conexas. No podrán incorporarse durante la tramitación parlamentaria enmiendas que carezcan de relación directa con el objeto del proyecto o proposición.
-- Simplificación del procedimiento de reforma constitucional agravado (reforma Art. 168 CE): la reforma de los títulos protegidos (Título Preliminar, Sección 1.ª del Capítulo II del Título I y Título II) requerirá aprobación por 2/3 del Congreso y 2/3 del Senado y referéndum obligatorio aprobado por 2/3 de los votos válidos emitidos. Se suprime la exigencia de disolución de las Cortes y ratificación por unas nuevas Cortes.
 
 Secuencia procedimental:
 
-1. Las Cortes aprueban el Voto 4 por 3/5 del Congreso (210 votos) y 3/5 del Senado (159 votos) — procedimiento del Art. 167 CE. Entra en vigor la reforma del Art. 168 (simplificación del procedimiento agravado).
-2. Las mismas Cortes aprueban los Votos 1, 2 y 3 por 2/3 del Congreso (234 votos) y 2/3 del Senado (177 votos) — procedimiento del Art. 168 CE ya simplificado (sin disolución).
-3. Referéndum obligatorio de los cuatro votos, votados por separado en la misma jornada.
-4. Aprobada la reforma en referéndum, entra en vigor la Constitución reformada.
-5. Disolución de las Cortes y elecciones generales con el nuevo sistema electoral (circunscripción única nacional).
+1. Las Cortes aprueban el Voto 3 por 3/5 del Congreso (210 votos) y 3/5 del Senado (159 votos) — procedimiento del Art. 167 CE.
+2. Las mismas Cortes aprueban el principio de reforma de los Votos 1 y 2 por 2/3 del Congreso (234 votos) y 2/3 del Senado (177 votos) — procedimiento del Art. 168 CE (vigente).
+3. Disolución de las Cortes.
+4. Elecciones generales con el sistema electoral vigente (52 circunscripciones provinciales).
+5. Las nuevas Cortes ratifican los Votos 1 y 2 por 2/3 de ambas cámaras y aprueban los textos definitivos.
+6. Referéndum obligatorio de los tres votos, votados por separado en la misma jornada.
+7. Aprobada la reforma en referéndum, entra en vigor la Constitución reformada (incluida la simplificación del Art. 168 para futuras reformas).
+8. Disolución de las Cortes y elecciones generales con el nuevo sistema electoral (circunscripción única nacional).
 
 Aprobada la derogación de la Disposición Adicional Primera (Voto 1), se procederá a la derogación del Concierto Económico con el País Vasco (Ley 12/2002) y del Convenio Económico con Navarra (Ley 28/1990) por ley orgánica, integrando ambas comunidades en el régimen común de financiación autonómica.
 
