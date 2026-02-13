@@ -62,7 +62,7 @@
   - DG de Registros (Civil, Mercantil, Propiedad, Propiedad Intelectual e Industrial, Animales, Residentes Digitales, Títulos y Certificados)
   - DG de Administración de Justicia
   - DG de Codificación y Reforma Legislativa
-  - Organismos: INTCF (Instituto Nacional de Toxicología y Ciencias Forenses), TEA (Tribunal Económico-Administrativo Central), TACRC (Tribunal Administrativo Central de Recursos Contractuales)
+  - Organismos: INTCF (Instituto Nacional de Toxicología y Ciencias Forenses)
   - Base de datos penal
 - **Ministerio de Sanidad**
   - DG de Salud Pública

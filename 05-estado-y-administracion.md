@@ -111,6 +111,25 @@ Las comunidades autónomas ejercen competencias en las siguientes materias, con 
 - Oposición nacional única para todos los cuerpos funcionariales
 - **Reforma del EBEP: nueva causa de pérdida de la condición de funcionario por supresión del cuerpo, escala o función por ley.** Cuando una ley suprima un organismo, cuerpo o función, los funcionarios adscritos serán objeto de un procedimiento de recolocación de 6 meses en otro cuerpo del mismo grupo. Agotado el plazo sin recolocación efectiva, el funcionario cesará con una indemnización de 20 días de retribuciones por año de servicio. El cese es recurrible ante la jurisdicción contencioso-administrativa. Los servicios esenciales (sanidad, educación, seguridad, justicia) quedan excluidos de esta causa.
 
+## Contratación pública
+
+- **Plataforma de Contratación del Sector Público única nacional.** Eliminación de las plataformas autonómicas (Cataluña, Navarra, País Vasco y cualquier otra). Todas las licitaciones de Estado, CCAA y municipios en una sola plataforma.
+- **Plazo máximo de prórroga forzosa de 12 meses.** Los contratos de concesión de servicios públicos expirados no podrán mantenerse por continuidad del servicio más de 12 meses desde su vencimiento. En ese plazo, la Administración titular deberá haber adjudicado un nuevo contrato o asumido la gestión directa del servicio. Transcurrido el plazo sin actuación, el contrato se extingue de pleno derecho.
+- **Registro Central de Contratos del Sector Público.** Todas las Administraciones están obligadas a inscribir todos sus contratos públicos (obras, servicios, suministros, concesiones), con fecha de inicio, duración, prórrogas, importe y vencimiento. El registro publica automáticamente las concesiones de servicios que se encuentren a menos de 12 meses de su vencimiento y las que hayan expirado. Datos públicos y accesibles mediante API abierta.
+- **Publicación obligatoria de contratos menores.** Todos los contratos menores se inscriben en el Registro Central de Contratos del Sector Público con identificación del adjudicatario, objeto, importe y fecha. Se publican trimestralmente de forma agregada por órgano de contratación, permitiendo detectar fraccionamientos y concentraciones de adjudicaciones en un mismo proveedor.
+- **Intervención subsidiaria.** Si la Administración titular no actúa en el plazo de 12 meses, la comunidad autónoma — o el Estado si el servicio es de competencia estatal — podrá licitar el contrato en su nombre y repercutir los costes a la Administración titular.
+
+## Procedimiento administrativo
+
+- **Supresión del recurso de alzada y del recurso de reposición.** Los recursos administrativos dejan de ser resueltos por la propia Administración que dictó el acto. Se sustituyen por la reclamación ante el tribunal administrativo competente.
+- **Tres tribunales administrativos independientes** de ámbito estatal, especializados por materia, adscritos al Senado. Resuelven las reclamaciones de los ciudadanos contra actos de la Administración. Son órganos independientes de la Administración activa:
+  - **Tribunal Administrativo de Recursos Contractuales** (contratación pública — ya existente, pasa a depender del Senado).
+  - **Tribunal Administrativo de Recursos Tributarios** (tributos — sustituye a los actuales Tribunales Económico-Administrativos).
+  - **Tribunal Administrativo de Procedimientos Comunes** (todos los demás actos administrativos — nueva creación).
+- Los tribunales administrativos podrán establecer secciones territoriales en función del volumen de reclamaciones. Las secciones territoriales forman parte del tribunal central, dependen orgánicamente del Senado y aplican la misma doctrina y ley procesal.
+- Plazo máximo de resolución de 1 mes. La reclamación ante el tribunal administrativo es voluntaria: el ciudadano puede optar por acudir directamente a la jurisdicción contencioso-administrativa.
+- **Responsabilidad disciplinaria por inactividad.** El incumplimiento reiterado de plazos de resolución por parte de un funcionario constituye falta disciplinaria.
+
 ## Justicia
 
 - Unificación de bases de datos judiciales y expediente judicial electrónico único

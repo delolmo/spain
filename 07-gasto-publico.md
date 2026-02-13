@@ -3,7 +3,6 @@
 ## Supresión de organismos y entidades
 
 - **Supresión de la AEI (Agencia Estatal de Investigación).** La evaluación y financiación de proyectos de investigación se integra en el CSIC, que pasa a ser el único organismo público de investigación y financiación científica.
-- **Plataforma de Contratación del Sector Público única nacional.** Eliminación de las plataformas autonómicas (Cataluña, Navarra, País Vasco y cualquier otra). Todas las licitaciones de Estado, CCAA y municipios en una sola plataforma.
 - **Portal único de empleo público.** Todas las convocatorias de oposiciones y concursos del Estado, Comunidades Autónomas y Entidades Locales se publican en un único portal nacional. Inscripción unificada con certificado digital. Eliminación de los portales autonómicos y locales de empleo público.
 - **Portal único de convocatorias y ayudas I+D+i.** Todas las convocatorias de CDTI, CSIC, ministerios y programas autonómicos en un solo portal. Eliminación de portales autonómicos de innovación. Enlace directo a convocatorias europeas (Horizon Europe).
 - Supresión de televisiones y radio públicas nacionales
@@ -24,7 +23,7 @@
 - Eliminar observatorios estatales
 - Eliminar los consorcios y fundaciones públicas
 - Eliminar tribunales de cuentas autonómicos
-- Eliminar tribunales económico-administrativos autonómicos y tribunales de recursos contractuales autonómicos; funciones centralizadas en el TEA y el TACRC, ambos adscritos a Justicia
+- Eliminar tribunales económico-administrativos autonómicos y tribunales de recursos contractuales autonómicos; funciones centralizadas en los tribunales administrativos estatales adscritos al Senado
 - Supresión del Instituto de Cinematografía y Artes Audiovisuales
 
 ## Privatizaciones
