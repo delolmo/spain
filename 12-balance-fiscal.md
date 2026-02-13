@@ -19,8 +19,8 @@ Impuestos eliminados por el programa cuya recaudación actual se pierde íntegra
 - Impuesto sobre Primas de Seguro: −1.900 (AEAT 2024)
 - Impuesto sobre Premios de Loterías: −280 (AEAT 2024)
 - Tasa Google + Tasa Tobin: −400 (AEAT 2024)
-- Impuestos especiales eliminados (banca, electricidad, envases, etc.): −4.200 (estimación)
-- Impuestos medioambientales no energéticos: −300 (estimación)
+- Impuestos especiales eliminados (banca, electricidad, etc.): −3.700 (estimación)
+- Impuestos medioambientales no energéticos (incluye envases de plástico Ley 7/2022): −800 (estimación)
 - Impuestos propios de las CCAA: −2.800 (estimación agregada 17 CCAA)
 - Recargos y tributos sobre energía (Ley 15/2012): −1.800 (estimación)
 

@@ -17,7 +17,8 @@
 - Supresión de agencia EFE
 - Eliminación del CIS
 - Supresión del Consejo Económico y Social (CES)
-- **Supresión de las Cámaras Oficiales de Comercio.** Derogación de la Ley 4/2014. Las cámaras pierden su estatus de corporación de derecho público. Las funciones públicas delegadas (certificados de origen, comercio exterior) se transfieren al Registro Mercantil. Los empresarios que deseen asociarse lo harán mediante asociaciones privadas
+- **Integración del Consejo de Transparencia y Buen Gobierno (CTBG) en el Senado.** Las funciones de control de transparencia y buen gobierno pasan a la función de auditoría territorial del Senado. Se suprime el CTBG como organismo independiente
+- **Privatización de las Cámaras Oficiales de Comercio.** Derogación de la Ley 4/2014. Las cámaras pierden su estatus de corporación de derecho público y se convierten en asociaciones privadas. Las funciones públicas delegadas (certificados de origen, comercio exterior) se transfieren al Registro Mercantil. Sin financiación pública
 - **Eliminación de Diputaciones Provinciales y conversión en Delegaciones del Gobierno.** Las diputaciones provinciales desaparecen como entes locales autónomos. La provincia se mantiene como circunscripción administrativa del Estado. En cada provincia se establece una Delegación del Gobierno que coordina la prestación de los servicios estatales recentralizados (sanidad, educación, seguridad, justicia, Seguridad Social, agricultura, industria, vivienda, consumo) y ejerce las funciones de coordinación con los municipios que antes correspondían a las diputaciones. El personal funcionario de las diputaciones se integra en la Delegación del Gobierno o queda sujeto al procedimiento de recolocación del EBEP reformado
 - Mancomunación obligatoria de servicios municipales básicos para municipios de menos de 20.000 habitantes. Supresión de policías locales en municipios de menos de 10.000 habitantes.
 - Supresión del IDAE y CORES (funciones asumidas por la DG de Energía).
@@ -38,6 +39,7 @@
 - Reducción del gasto público en I+D+i civil a niveles pre-2020, eliminando la inflación de partidas vinculada a fondos Next Generation. La investigación básica se financia vía universidades (ya racionalizadas) y contratos competitivos europeos (Horizon Europe). La I+D aplicada la financia el sector privado.
 - Prestación asistencial única estatal, sustituyendo el IMV y rentas mínimas autonómicas, condicionada a trabajo comunitario, con sanción progresiva por rechazo y límite temporal de 24 meses en 5 años.
 - Eliminar la financiación pública a partidos políticos, sindicatos y medios de comunicación. Sustitución por una asignación anual por ciudadano que cada persona podrá destinar libremente a la organización de su elección.
+- **Reversión del patrimonio sindical acumulado.** Derogación del RD 3/2010. Los inmuebles públicos cedidos a sindicatos y organizaciones empresariales desde la Transición revierten al Estado. Los sindicatos que deseen mantener sedes lo harán con cargo a sus propios recursos.
 - Eliminar la pensión por viudedad, sin efecto retroactivo
 - Eliminar el copago farmacéutico. El ahorro se obtiene por la centralización de compras y el uso obligatorio de genéricos.
 - Eliminar tasas judiciales
